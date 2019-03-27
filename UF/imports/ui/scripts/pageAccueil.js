@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 
-import '../templates/monTemplate.html'
+import '../templates/pageAccueil.html'
 
-Template.monTemplate.helpers({
+Template.pageAccueil.helpers({
     titre: () => "UniFlash"
 })

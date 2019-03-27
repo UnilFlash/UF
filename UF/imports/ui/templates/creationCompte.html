@@ -1,0 +1,35 @@
+<body>
+        {{#if currentUser}}
+        {{>logout}}
+        {{else}}
+         {{>register}}
+         {{>login}}
+        {{/if}}
+</body>
+
+
+<template name="register">
+
+<form>
+    <input type="text" id="email" placeholder="prenom.nom@unil.ch">
+    <input type="password" id="password">
+    <input type="submit" value="S'enregistrer"> 
+</form>
+
+</template>
+    
+<template name="login">
+
+        <form>
+            <input type="text" id="login-email" placeholder="prenom.nom@unil.ch">
+            <input type="password" id="login-password">
+            <input type="submit" value="Login"> 
+        </form>
+        
+</template>
+
+<template name="logout">
+<p>Bienvenu/e sur Flashunil</p>
+<p><a href="#" class="Logout">Logout</a></p>
+
+</template>
