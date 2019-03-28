@@ -4,16 +4,16 @@ import { Template } from 'meteor/templating';
 import '../templates/selectionFlash.html'
 
 if (Meteor.isClient) {
-    
+
     Template.types.events({
-       'click #chill': function() {
-          alert("You've got the chill...");
+       'click #games': function() {
+          alert("GAMEEEE ONNN");
        },
        'click #drink': function(){
-           alert("Drink together...");
+           alert("You will never drink alone!");
        },
-       'click #art': function(){
-           alert("The art world is the best world")
+       'click #music': function(){
+           alert("DO RE MI FA SOL LA SOOOOOOL")
        }
     });
  }

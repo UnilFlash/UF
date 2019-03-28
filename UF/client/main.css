@@ -6,11 +6,11 @@ body {
 }
 
 #monInput{
-  color:yellow;
+  color:#FFD500;
 }
 
 #titreP{
-  color:yellow;
+  color:#FFD500;
   font-size:100px;
 }
 
@@ -19,7 +19,39 @@ body {
   margin: auto;
 }
 
-#icones{
-  max-width: 500px;
-  margin: auto;
+div.gallery{
+  display: inline;
+  margin: 10px;
+  float: left;
+  width: 180px;
+  background-color: #FFD500;
+  border-radius: 180px;
+  height:180px;
+}
+
+div.gallery:hover {
+  background-color: lightgreen;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+#drinkicone{
+  font-size: 80px;
+  padding-left: 62.5px;
+  padding-top: 20px;
+}
+
+#musicicone{
+  font-size: 80px;
+  padding-left: 55px;
+  padding-top: 20px;
+}
+
+#gamesicone{
+  font-size: 80px;
+  padding-left: 55px;
+  padding-top: 20px;
 }
