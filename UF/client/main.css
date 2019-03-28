@@ -14,3 +14,12 @@ body {
   font-size:100px;
 }
 
+#iconesTitre{
+  max-width: 400px;
+  margin: auto;
+}
+
+#icones{
+  max-width: 500px;
+  margin: auto;
+}
