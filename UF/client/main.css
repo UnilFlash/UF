@@ -19,8 +19,7 @@ body {
   margin: auto;
 }
 
-div.gallery{
-  display: inline;
+.gallery{
   margin: 10px;
   float: left;
   width: 180px;
@@ -29,11 +28,15 @@ div.gallery{
   height:180px;
 }
 
-div.gallery:hover {
+.gallery:active{
   background-color: lightgreen;
 }
 
-div.desc {
+.gallery:target{
+  background-color: lightgreen;
+}
+
+.desc {
   padding: 10px;
   text-align: center;
 }
@@ -53,5 +56,11 @@ div.desc {
 #gamesicone{
   font-size: 80px;
   padding-left: 55px;
+  padding-top: 20px;
+}
+
+#studyicone{
+  font-size: 80px;
+  padding-left: 47px;
   padding-top: 20px;
 }
