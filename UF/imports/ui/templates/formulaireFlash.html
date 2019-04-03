@@ -1,12 +1,12 @@
 <template name="formulaireFlash">
-    <h1>Création Flash Formulaire</h1>
+    <h1> Flash Formulaire</h1>
 
     <form>
         <!--ajouter les pastilles activité avec (séléctionner le types d'activité-->
         <h3>Activité</h3>
-        <input type="text" id="Activite"><br>
-        <br>
-        <input type="date" /><br> ajouter date du jour ou max 48h avant
+        <input type="text" id="Activite">
+        <br><br>
+        <input type="date" /><br> <!--ajouter date du jour ou max 48h avant-->
         <br>
         <h3>Heure</h3>
         <input type="time" id="Heure"><br>
@@ -19,13 +19,12 @@
         <input type="number" id="Par équipe"><br>
         <br>
         <h3>Information supplémentaires</h3>
-        <textarea name="infoSupp" id="infoSupp" cols="30" rows="10"></textarea>
-        <!--<input type="text" id="infos en plus" size=40>-->
+        <textarea name="infoSupp" id="infoSupp" cols="30" rows="7"></textarea>
         <br><br>
         <h3>Lieu</h3>
         <input type="text" id="Lieu"> <br>
         <br>
-        <button id="flasher" onclick="fonctionFlasher()"><img src="./images/flash.png "></button>
+        <button id="flasher" onclick="fonctionFlasher()"><img src="./images/flash.png " height="90" width="90"></button>
 
         <!--ajouter une carte maps interactive-->
         
