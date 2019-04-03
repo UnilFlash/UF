@@ -9,13 +9,6 @@ body {
   color:#FFD500;
 }
 
-#titreP{
-  color:#FFD500;
-  font-size:100px;
-  position:absolute;
-  top:80px;
-  left:80px;
-}
 
 #iconesTitre{
   max-width: 400px;
@@ -112,5 +105,6 @@ filter: FlipH;
 
 #logo{
   position:absolute;
-  top:300px;
+  top:500px;
+  margin-left:300px;
 }
