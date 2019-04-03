@@ -3,7 +3,7 @@ import { Template } from 'meteor/templating';
 
 import '../templates/selectionFlash.html'
 
-    Template.types.events({
+    Template.selectionFlash.events({
        'click #games': function() {
           alert("GAMEEEE ONNN");
        },
