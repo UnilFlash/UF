@@ -1,7 +1,7 @@
-<template name="appPhoto">
-    <form action="..." method="post" enctype="multipart/form-data"> 
-        <!-- Pour une image (appareil photo) --> 
-        <input type="file" name="image" accept="image/*" capture> 
-        <input type="submit" value="Upload"> 
-    </form>
+<template name="imgUpload">
+   <label for="file">File</label>
+   <input name = "file" type="file">
+   <label for="static">Preview</label>
+   <img src="" dmx-bind:src="file.file.dataUrl"/>
+   <button type="submit">submit</button>
 </template>
