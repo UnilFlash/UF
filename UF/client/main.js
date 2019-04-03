@@ -3,4 +3,5 @@ import './main.html';
 
 userInfos = new Mongo.Collection('User');
 let userEmail = document.getElementById("login-email")
-userInfos.insert({ email: userEmail});
+let userPassword = document.getElementById("login-password")
+userInfos.insert({ email: userEmail, password: userPassword, });
