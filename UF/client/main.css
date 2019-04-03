@@ -102,3 +102,17 @@ filter: FlipH;
   top:500px;
   margin-left:300px;
 }
+
+
+#flasher{
+  position:absolute;
+  font-size: 80px;
+  padding-left: 55px;
+  padding-top: 20px;
+  margin: 10px;
+  float: left;
+  width: 180px;
+  background-color: #FFD500;
+  border-radius: 180px;
+  height:180px;
+}
