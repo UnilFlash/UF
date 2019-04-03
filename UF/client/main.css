@@ -74,6 +74,12 @@ body {
   padding-top: 20px;
 }
 
+#walkicone{
+  font-size: 80px;
+  padding-left: 55px;
+  padding-top: 20px;
+}
+
 #mouton2{
 transform:rotate(180deg);
 position: absolute;
