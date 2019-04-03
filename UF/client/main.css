@@ -1,20 +1,7 @@
 body {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #BBCAE8;
-  
-}
-
-#monInput{
-  color:#FFD500;
-}
-
-#titreP{
-  color:#FFD500;
-  font-size:100px;
-  position:absolute;
-  top:80px;
-  left:80px;
+  background-color: #BBCAE8; 
 }
 
 #iconesTitre{
@@ -112,4 +99,20 @@ filter: FlipH;
   background-color: #FFD500;
   border-radius: 60px;
   height:50px;
+  top:500px;
+  margin-left:300px;
+}
+
+
+#flasher{
+  position:absolute;
+  font-size: 80px;
+  padding-left: 55px;
+  padding-top: 20px;
+  margin: 10px;
+  float: left;
+  width: 180px;
+  background-color: #FFD500;
+  border-radius: 180px;
+  height:180px;
 }

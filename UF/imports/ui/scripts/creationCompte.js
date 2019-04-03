@@ -7,12 +7,11 @@ import '../templates/creationCompte.html'
 Template.register.events({
     'submit form' : function(event, template){
       event.preventDefault();
-      var emailVar = template.find('#email').value;
-      var passwordVar = template.find('#password').value;
+      let emailVar = template.find('#email').value;
+      let passwordVar = template.find('#password').value;
       Accounts.createUser({
         email: emailVar,
         password : passwordVar,
-  
       });
     }
     });
@@ -21,9 +20,9 @@ Template.register.events({
     Template.login.events({
       'submit form' : function(event, template){
         event.preventDefault();
-        var emailVar = template.find('#login-email').value;
-        var passwordVar = template.find('#login-password').value;
-        Meteor.loginWithPassword(emailVar, passwordVar);
+        let emailVar2 = template.find('#login-email').value;
+        let passwordVar2 = template.find('#login-password').value;
+        Meteor.loginWithPassword(emailVar2, passwordVar2);
       
       }
       });

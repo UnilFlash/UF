@@ -1,7 +1,9 @@
-<template name="appPhoto">
-    <form action="..." method="post" enctype="multipart/form-data"> 
-        <!-- Pour une image (appareil photo) --> 
-        <input type="file" name="image" accept="image/*" capture> 
-        <input type="submit" value="Upload"> 
-    </form>
+<template name="uploadForm">
+    {{#with currentUpload}}
+        Uploading <b>{{file.name}}</b>:
+        <span id="progress">{{progress.get}}%</span>
+    {{else}}
+        <input id="fileInput" type="file" />
+    {{/with}}
+    <img src="{{imageFile.link}}" alt="img">
 </template>
