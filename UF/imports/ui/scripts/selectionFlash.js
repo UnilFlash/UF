@@ -3,8 +3,6 @@ import { Template } from 'meteor/templating';
 
 import '../templates/selectionFlash.html'
 
-/*if (Meteor.isClient) {
-
     Template.types.events({
        'click #games': function() {
           alert("GAMEEEE ONNN");
@@ -17,9 +15,5 @@ import '../templates/selectionFlash.html'
        },
        'click #sport': function(){
            alert("GOOOOOOOOL")
-       },
-       
-       "click #games": function(){
-       if($("#games").css({"background-color":"#FFD500"})){
-       $("#games").css({"background-color":"lightgreen"})*/
-
+       }
+    })
