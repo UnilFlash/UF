@@ -1,7 +1,8 @@
 <template name="imgUpload">
-   <label for="file">File</label>
-   <input name = "file" type="file">
-   <label for="static">Preview</label>
-   <img src="" dmx-bind:src="file.file.dataUrl"/>
-   <button type="submit">submit</button>
+    {{#with currentUpload}}
+    Uploading <b>{{file.name}}</b>:
+    <span id="progress">{{progress.get}}%</span>
+  {{else}}
+    <input id="fileInput" type="file" />
+  {{/with}}
 </template>
