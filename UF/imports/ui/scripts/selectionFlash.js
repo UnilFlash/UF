@@ -1,19 +1,70 @@
 import { Template } from 'meteor/templating';
+import { Session } from 'meteor/session';
 
 
-import '../templates/selectionFlash.html'
+import '../templates/selectionFlash.html';
+
+Template.selectionFlash.onCreated(function(){
+    Session.set("games", false);
+    Session.set("drink", false);
+    Session.set("music", false);
+    Session.set("study", false);
+    Session.set("sport", false);
+    Session.set("walk", false);
+});
+
+var nClicks = 0;
+
 
     Template.selectionFlash.events({
        'click #games': function() {
-          alert("GAMEEEE ONNN");
+           if(Session.get("games")){
+               Session.set("games", false)
+           }else{
+               Session.set("games", true)
+           }
        },
        'click #drink': function(){
-           alert("You will never drink alone!");
+           if(Session.get("drink")){
+               Session.set("drink", false)
+           }else{
+               Session.set("drink", true)
+           }
        },
        'click #music': function(){
-           alert("DO RE MI FA SOL LA SOOOOOOL")
+           if(Session.get("music")){
+               Session.set("music", false)
+           }else{
+               Session.set("music", true)
+           }
        },
        'click #sport': function(){
-           alert("GOOOOOOOOL")
-       }
+           if(Session.get("sport")){
+               Session.set("sport", false)
+           }else{
+               Session.set("sport", true)
+           }
+       },
+       'click #walk': function(){
+           if(Session.get("walk")){
+               Session.set("walk", false)
+           }else{
+               Session.set("walk", true)
+           }
+       },
+       'click #filtrer': function(){
+           if(Session.get("filtrer")){
+               Session.set("filtrer", false)
+           }else{
+               Session.set("filtrer", true)
+           }
+       },
+       'click #music': function(){ 
+            if(nClicks%2==0){ 
+               document.getElementsById("music").style.backgroundColor = "lightgreen"
+            }else{
+               document.getElementsById("music").style.backgroundColor = "black";
+            }
+        }
+       
     })

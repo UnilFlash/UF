@@ -31,14 +31,6 @@ body {
   height:180px;
 }
 
-.gallery:active{
-  background-color: lightgreen;
-}
-
-.gallery:target{
-  background-color: lightgreen;
-}
-
 .desc {
   padding: 10px;
   text-align: center;
@@ -113,4 +105,11 @@ filter: FlipH;
 #logo{
   position:absolute;
   top:300px;
+}
+
+#filtrer{
+  width: 60px;
+  background-color: #FFD500;
+  border-radius: 60px;
+  height:50px;
 }
