@@ -134,6 +134,13 @@ width: 265px;
 height: 33.97px;
 background-color: #EDF3F6;
 }
+#date{
+  position: absolute;
+  border-radius: 10px;
+  width: 150px;
+  height: 33.97px;
+  background-color: #EDF3F6; 
+}
 
 #heure{
 position: absolute;
@@ -168,7 +175,7 @@ background-color: #EDF3F6;
 #lieu{
   position: absolute;
   border-radius: 10px;
-  width: 265px;
-  height: 33.97px;
+  width: 280px;
+  height: 70px;
   background-color: #EDF3F6;
 }

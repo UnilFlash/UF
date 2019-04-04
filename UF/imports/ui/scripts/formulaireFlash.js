@@ -9,6 +9,7 @@ Template.formulaireFlash.events({
         event.preventDefault();
 
         const activiteVal= event.target.activite.value;
+        const dateVal= event.target.date.value;
         const heureVal= event.target.heure.value;
         const nbrPersVal= event.target.nbrPers.value;
         const caseVal= event.target.case.value;
