@@ -164,3 +164,11 @@ background-color: #EDF3F6;
   border-radius: 10px;
   background-color: #EDF3F6; 
 }
+
+#lieu{
+  position: absolute;
+  border-radius: 10px;
+  width: 265px;
+  height: 33.97px;
+  background-color: #EDF3F6;
+}

@@ -1,7 +1,7 @@
 <template name="formulaireFlash">
     <h1>Formulaire Flashiste</h1>
 
-    <form>
+    <form class="js-formulaire-flash">
         <!--ajouter les pastilles activité avec (séléctionner le types d'activité-->
         <h4>Activité</h4>
         <input type="text" id="activite">
@@ -26,8 +26,9 @@
         <input type="text" id="lieu"> 
         <br><br><br>
         <!--<input type="image" id="flasher" onclick="fonctionFlasher();" src="./images/flash.png " height="200" width="120" alt="flasher">-->
-        <button id="flasher" onclick="fonctionFlasher()"><img src="./images/flash.png " height="100" width="100"></button>
+        <button  type="submit" id="flasher"><img src="./images/flash.png " height="100" width="100"></button>
 
+        <!--onclick="fonctionFlasher()"-->
         <!--ajouter une carte maps interactive-->
         
         <!--<button value="flasher" onclick="fonctionFlasher();"><img  alt="" /></button>/<input type="image" name="flasher" value="flasher" src="image/monimg.gif"> possibilité de boutton image?-->
