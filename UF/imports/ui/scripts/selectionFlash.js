@@ -13,8 +13,6 @@ Template.selectionFlash.onCreated(function(){
     Session.set("walk", false);
 });
 
-var nClicks = 0;
-
 
     Template.selectionFlash.events({
        'click #games': function() {
@@ -59,12 +57,23 @@ var nClicks = 0;
                Session.set("filtrer", true)
            }
        },
-       'click #music': function(){ 
-            if(nClicks%2==0){ 
-               document.getElementsById("music").style.backgroundColor = "lightgreen"
-            }else{
-               document.getElementsById("music").style.backgroundColor = "black";
-            }
+       'click #music': function(){
+           document.getElementById("music").style.color="rgb(82,255,0,45%)"    
+        },
+        'click #drink': function(){
+            document.getElementById("drink").style.color="rgb(82,255,0,45%)"    
+        },
+        'click #walk': function(){ 
+            document.getElementById("walk").style.color="rgb(82,255,0,45%)"    
+        },
+        'click #study': function(){ 
+            document.getElementById("study").style.color="rgb(82,255,0,45%)"
+        },
+        'click #sport': function(){ 
+            document.getElementById("sport").style.color="rgb(82,255,0,45%)"
+        },
+        'click #games': function(){ 
+            document.getElementById("games").style.color="rgb(82,255,0,45%)"
         }
        
     })
