@@ -58,22 +58,22 @@ Template.selectionFlash.onCreated(function(){
            }
        },
        'click #music': function(){
-           document.getElementById("music").style.color="rgb(82,255,0,45%)"    
+            document.getElementById("musicicone").style.color="rgb(255,0,0,58%)"
         },
         'click #drink': function(){
-            document.getElementById("drink").style.color="rgb(82,255,0,45%)"    
+            document.getElementById("drinkicone").style.color="rgb(255,0,0,58%)"    
         },
         'click #walk': function(){ 
-            document.getElementById("walk").style.color="rgb(82,255,0,45%)"    
+            document.getElementById("walkicone").style.color="rgb(255,0,0,58%)"    
         },
         'click #study': function(){ 
-            document.getElementById("study").style.color="rgb(82,255,0,45%)"
+            document.getElementById("studyicone").style.color="rgb(255,0,0,58%)"
         },
-        'click #sport': function(){ 
-            document.getElementById("sport").style.color="rgb(82,255,0,45%)"
+        'click #sport': function(){
+            document.getElementById("sporticone").style.color="rgb(255,0,0,58%)"
         },
         'click #games': function(){ 
-            document.getElementById("games").style.color="rgb(82,255,0,45%)"
+            document.getElementById("gamesicone").style.color="rgb(255,0,0,58%)"
         }
        
     })
