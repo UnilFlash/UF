@@ -1,37 +1,46 @@
 <template name="formulaireFlash">
     <h1>Formulaire Flashiste</h1>
 
-    <form>
-        <!--ajouter les pastilles activité avec (séléctionner le types d'activité-->
+    <form class="js-formulaire-flash">
+        
+        <br><br>
+        <button  onclick="fonctionTypesflash()" id="typeActivite" value="Sélectionne le type d'activité"></button>
+        <br>
+        <label for="IdtypeActivite">Sélectionne le type d'activité</label>
+        <br><br>
         <h4>Activité</h4>
         <input type="text" id="activite">
         <br><br>
-        <input type="date" id="date"><br> <!--ajouter date du jour ou max 48h avant-->
+        <h4>Date</h4>
+        <input type="date" id="date" min="2019.04.04" max="2019.04.04"><br> <!--ajouter date du jour ou max 48h avant-->
         <br>
         <h4>Heure</h4>
-        <input type="time" id="heure" max="48h"><br>
+        <input type="time" id="heure"><br>
         <br>
         <h4>Nombre de personnes</h4>
         <input type="number" id="nbrPers">
-        <br><br><br>
-        <h4>Par équipe</h4>
+        <br><br>
         <input type="checkbox" name="case" value="valeur attachée au bouton">
+        <label for="IdCheckBox">Par équipe</label> 
         <br>
-        <input type="number" id="parEquipe02"><br>
+        <!--<input type="number" id="parEquipe"><br>-->
         <br>
         <h4>Information supplémentaires</h4>
         <textarea name="infoSupp" id="infoSupp" cols="30" rows="7"></textarea>
         <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br>
         <h4>Lieu</h4>
         <input type="text" id="lieu"> 
-        <br><br><br>
+        <br><br>
+        <br><br>
         <!--<input type="image" id="flasher" onclick="fonctionFlasher();" src="./images/flash.png " height="200" width="120" alt="flasher">-->
-        <button id="flasher" onclick="fonctionFlasher()"><img src="./images/flash.png " height="100" width="100"></button>
+        <button  type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
 
         <!--ajouter une carte maps interactive-->
         
         <!--<button value="flasher" onclick="fonctionFlasher();"><img  alt="" /></button>/<input type="image" name="flasher" value="flasher" src="image/monimg.gif"> possibilité de boutton image?-->
     </form>
 </template>
-
-<!--src="./images/flash.png"-->
