@@ -11,6 +11,7 @@ Template.selectionFlash.onCreated(function(){
     Session.set("study", false);
     Session.set("sport", false);
     Session.set("walk", false);
+    Session.set("filtrer", false);
 });
 
 
