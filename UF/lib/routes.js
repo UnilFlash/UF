@@ -5,9 +5,3 @@ FlowRouter.route('/uploadForm',{
     }
 });
 
-const routes = {
-    '/login'      : Login
-    , '/preferences'      : Preferences
-    , '/formulaire'   : Formulaire
-    ,'/creation' : Creation
-};
