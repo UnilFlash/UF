@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { Session } from 'meteor/session';
+import { Filtres } from '../../api/selection.js';
 
 
 import '../templates/selectionFlash.html';
@@ -64,8 +65,8 @@ Template.selectionFlash.onCreated(function(){
         'click #drink': function(){
             document.getElementById("drinkicone").style.color="rgb(255,0,0,58%)"    
         },
-        'click #walk': function(){ 
-            document.getElementById("walkicone").style.color="rgb(255,0,0,58%)"    
+        'click #walk': function(){
+            document.getElementById("walkicone").style.color="rgb(255,0,0,58%)"
         },
         'click #study': function(){ 
             document.getElementById("studyicone").style.color="rgb(255,0,0,58%)"
@@ -75,6 +76,8 @@ Template.selectionFlash.onCreated(function(){
         },
         'click #games': function(){ 
             document.getElementById("gamesicone").style.color="rgb(255,0,0,58%)"
-        }
-       
+        },
+       'click #filtrer': function(){
+           
+       }
     })
