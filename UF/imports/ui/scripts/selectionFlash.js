@@ -18,6 +18,9 @@ Template.selectionFlash.onCreated(function(){
 
     Template.selectionFlash.events({
        'click #games': function() {
+
+
+        
            if(Session.get("games")){
                Session.set("games", false)
            }else{
