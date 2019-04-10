@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import '../imports/api/img.js'
 
-import '../both/collections';
+//import '../both/collections';
 
 
 //userInfos = new Mongo.collection("User")
