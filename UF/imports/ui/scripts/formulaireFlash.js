@@ -15,10 +15,7 @@ Template.formulaireFlash.events({
         const caseVal= event.target.case.value;
         const infoSuppVal= event.target.infoSupp.value;
         const lieuVal= event.target.lieu.value;
-       
-
-        console.log(activiteVal);
-        console.log(heureVal);
+    
 
     }
 });
