@@ -5,3 +5,9 @@ FlowRouter.route('/uploadForm',{
     }
 });
 
+FlowRouter.route('/login',{
+    name:'login',
+    action(){
+        BlazeLayout.render('pageLogin')
+    }
+});
