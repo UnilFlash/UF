@@ -1,9 +1,9 @@
 import { Template } from 'meteor/templating';
 import { Session } from 'meteor/session';
-import { Filtres } from '../../api/selection.js';
 
 
 import '../templates/selectionFlash.html';
+import '../../api/filtres.js'
 
 Template.selectionFlash.onCreated(function(){
     Session.set("games", false);
