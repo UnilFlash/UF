@@ -1,8 +1,8 @@
 import { Meteor } from 'meteor/meteor';
 import '../imports/api/img.js'
-Meteor.startup(() => {
-  // code to run on server at startup
-});
+
+import '../both/collections';
+
 
 //userInfos = new Mongo.collection("User")
 //var userEmail = document.getElementbyId("login-email");
