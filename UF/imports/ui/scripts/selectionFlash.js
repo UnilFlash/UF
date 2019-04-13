@@ -4,63 +4,38 @@ import { Session } from 'meteor/session';
 
 import '../templates/selectionFlash.html';
 import '../../api/filtres.js'
+import { Mongo } from "meteor/mongo";
 
-Template.selectionFlash.onCreated(function(){
-    Session.set("games", false);
-    Session.set("drink", false);
-    Session.set("music", false);
-    Session.set("study", false);
-    Session.set("sport", false);
-    Session.set("walk", false);
-    Session.set("filtrer", false);
-});
 
 
     Template.selectionFlash.events({
-       'click #games': function() {
-
-
-           if(Session.get("games")){
-               Session.set("games", false)
-           }else{
-               Session.set("games", true)
-           }
+       'click #games': function(){
+           db.filtres.insert({_id: ObjectId(games)})
        },
        'click #drink': function(){
-           if(Session.get("drink")){
-               Session.set("drink", false)
-           }else{
-               Session.set("drink", true)
-           }
+           db.filtres.insert({_id: drink})
        },
        'click #music': function(){
-           if(Session.get("music")){
-               Session.set("music", false)
-           }else{
-               Session.set("music", true)
-           }
+           db.filtres.insert({_id: music})
        },
        'click #sport': function(){
-           if(Session.get("sport")){
-               Session.set("sport", false)
-           }else{
-               Session.set("sport", true)
-           }
+           db.filtres.insert({_id: sport})
        },
        'click #walk': function(){
-           if(Session.get("walk")){
-               Session.set("walk", false)
-           }else{
-               Session.set("walk", true)
-           }
+           db.filtres.insert({_id: walk})
        },
+       'click #study': function(){
+           db.filtres.insert({_id: study})
+       },
+
+
+
        'click #filtrer': function(){
-           if(Session.get("filtrer")){
-               Session.set("filtrer", false)
-           }else{
-               Session.set("filtrer", true)
-           }
+
        },
+
+
+
        'click #music': function(){
             document.getElementById("musicicone").style.color="rgb(255,0,0,58%)"
         },
@@ -79,7 +54,4 @@ Template.selectionFlash.onCreated(function(){
         'click #games': function(){ 
             document.getElementById("gamesicone").style.color="rgb(255,0,0,58%)"
         },
-       'click #filtrer': function(){
-           
-       }
     })
