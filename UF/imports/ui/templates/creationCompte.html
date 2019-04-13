@@ -1,11 +1,11 @@
-<body>
+<template name="pageLogin">
         {{#if currentUser}}
-        {{>logout}}
+            {{>logout}}
         {{else}}
-         {{>register}}
-         {{>login}}
+            {{>register}}
+            {{>login}}
         {{/if}}
-</body>
+</template>
 
 <template name="register">
 
