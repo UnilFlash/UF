@@ -27,11 +27,8 @@ import { Mongo } from "meteor/mongo";
        'click #study': function(){
            db.filtres.insert({_id: study})
        },
-
-
-
        'click #filtrer': function(){
-
+           window.location ="http://localhost:3000/main"
        },
 
 

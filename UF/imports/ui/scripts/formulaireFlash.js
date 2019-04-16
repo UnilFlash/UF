@@ -17,6 +17,9 @@ Template.formulaireFlash.events({
         const lieuVal= event.target.lieu.value;
     
 
-    }
+    },
+    'click #flasher': function(){
+        window.location ="http://localhost:3000/main"
+    },
 });
 

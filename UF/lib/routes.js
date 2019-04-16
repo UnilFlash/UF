@@ -6,9 +6,9 @@ FlowRouter.route('/uploadForm',{
 });
 
 FlowRouter.route('/',{
-    name:'login',
+    name:'accueil',
     action(){
-        BlazeLayout.render('pageLogin')
+        BlazeLayout.render('pageAccueil')
     }
 });
 
@@ -32,3 +32,17 @@ FlowRouter.route('/filtres',{
         BlazeLayout.render('selectionFlash')
     }
 });
+
+FlowRouter.route('/main',{
+    name:'main',
+    action(){
+        BlazeLayout.render('pagePrincipale')
+    }
+});
+
+FlowRouter.route('/login',{
+    name:'login',
+    action(){
+        BlazeLayout.render('creationCompte')
+    }
+})

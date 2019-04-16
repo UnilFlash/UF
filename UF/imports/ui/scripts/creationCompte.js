@@ -37,3 +37,8 @@ Template.register.events({
         Meteor.logout();
       }
     });
+    
+    Template.login.events({
+      'click #login': function(){
+          window.location="http://localhost:3000/filtres"
+      }})
