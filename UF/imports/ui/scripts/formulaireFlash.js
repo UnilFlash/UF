@@ -21,5 +21,23 @@ Template.formulaireFlash.events({
     'click #flasher': function(){
         window.location ="http://localhost:3000/main"
     },
+    'click #music': function(){
+        document.getElementById("music").style.color="rgb(255,0,0,58%)"
+    },
+    'click #drink': function(){
+        document.getElementById("drink").style.color="rgb(255,0,0,58%)"    
+    },
+    'click #walk': function(){
+        document.getElementById("walk").style.color="rgb(255,0,0,58%)"
+    },
+    'click #study': function(){ 
+        document.getElementById("study").style.color="rgb(255,0,0,58%)"
+    },
+    'click #sport': function(){
+        document.getElementById("sport").style.color="rgb(255,0,0,58%)"
+    },
+    'click #games': function(){ 
+        document.getElementById("games").style.color="rgb(255,0,0,58%)"
+    },
 });
 
