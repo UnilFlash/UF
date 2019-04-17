@@ -1,10 +1,16 @@
 <template name="uploadForm">
-    {{#with currentUpload}}
+    <div class="container">
+        {{#with currentUpload}}
         Uploading <b>{{file.name}}</b>:
         <span id="progress">{{progress.get}}%</span>
     {{else}}
-        <input id="fileInput" type="file" />
+    <div class="custom-file">
+        <input id="customFile" type="file" class="custom-file-input" />
+        
+    </div>
+        
     {{/with}}
     <img src="{{imageFile.link}}" alt="img">
    <!--{{> Template.Dynamic template=main}}--> 
+    </div> 
 </template>

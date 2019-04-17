@@ -4,24 +4,24 @@
             </head>
     <h1>Formulaire Flashiste</h1>
 
-    <form class="js-formulaire-flash">
+    <form class="js-formulaire-flash" required>
         
         
         <br><br>
-        <button  class ="fas fa-guitar choix" id="music" value="music"></button>
-        <button  class ="fas fa-chess choix"  id="games" value="games"></button>
-        <button  class ="fas fa-beer choix"  id="drink" value="drink"></button>
-        <button  class ="fas fa-book-open choix"  id="study" value="study"></button>
-        <button  class ="fas fa-futbol choix"  id="sport" value="sport"></button>
-        <button  class ="fas fa-hiking choix"  id="walk" value="walk"></button>
+        <button  type="radio" class ="fas fa-guitar choix" id="music" value="music"></button>
+        <button  type="radio" class ="fas fa-chess choix"  id="games" value="games"></button>
+        <button  type="radio" class ="fas fa-beer choix"  id="drink" value="drink"></button>
+        <button  type="radio" class ="fas fa-book-open choix"  id="study" value="study"></button>
+        <button  type="radio" class ="fas fa-futbol choix"  id="sport" value="sport"></button>
+        <button  type="radio" class ="fas fa-hiking choix"  id="walk" value="walk"></button>
         <br>
         <label for="IdtypeActivite">Sélectionne le type d'activité</label>
         <br><br>
         <h4>Activité</h4>
-        <input type="text" id="activite">
+        <input type="text" id="activite" required>
         <br><br>
         <h4>Date</h4>
-        <input type="date" id="date" min="2019.04.04" max="2019.04.04"><br> <!--ajouter date du jour ou max 48h avant-->
+        <input type="date" id="date" min="2019.04.04" max="2019.04.04" required><br> <!--ajouter date du jour ou max 48h avant-->
         <br>
         <h4>Heure</h4>
         <input type="time" id="heure"><br>
@@ -41,7 +41,7 @@
         <br><br>
         <br>
         <h4>Lieu</h4>
-        <textarea name="lieu" id="lieu" cols="30" rows="7"></textarea>
+        <textarea name="lieu" id="lieu" cols="30" rows="7" required></textarea>
         <!--<input type="text" id="lieu"> -->
         <br><br>
         <br><br>
