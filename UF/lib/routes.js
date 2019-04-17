@@ -43,6 +43,6 @@ FlowRouter.route('/main',{
 FlowRouter.route('/login',{
     name:'login',
     action(){
-        BlazeLayout.render('creationCompte')
+        BlazeLayout.render('pageLogin')
     }
 })
