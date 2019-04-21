@@ -48,7 +48,7 @@ Template.uploadForm.events({
 });
 
 Template.appPhoto.events({
-  'click .takePhoto': function(e, instance) {
+  'click .btn btn-primary': function(e, instance) {
       e.preventDefault();
       var cameraOptions = {
           width: 800,
