@@ -10,7 +10,7 @@ import { Mongo } from "meteor/mongo";
 
     Template.selectionFlash.events({
        'click #games': function(){
-           db.filtres.insert({_id: ObjectId(games)})
+           db.filtres.insert({_id: games})
        },
        'click #drink': function(){
            db.filtres.insert({_id: drink})
