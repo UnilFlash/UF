@@ -1,4 +1,3 @@
-import { Mongo } from "meteor/mongo";
-
-export const Images = new Mongo.Collection ("images");
+import { FilesCollection } from 'meteor/ostrio:files';
+export const Images = new FilesCollection({collectionName: 'Images'});
 

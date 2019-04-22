@@ -46,3 +46,18 @@ Template.uploadForm.events({
     }
   }
 });
+
+Template.appPhoto.events({
+  'click .btn btn-primary': function(e, instance) {
+      e.preventDefault();
+      var cameraOptions = {
+          width: 800,
+          height: 600
+      };
+      MeteorCamera.getPicture(cameraOptions, function (error, data) {
+         if (!error) {
+             instance.$('.photo').attr('src', data); 
+         }
+      });
+  }
+});
