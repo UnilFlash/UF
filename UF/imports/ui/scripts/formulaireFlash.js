@@ -22,7 +22,7 @@ Template.formulaireFlash.events({
 
     },
     'click #flasher': function(){
-        window.location ="http://localhost:3000/main";
+        window.location ="http://localhost:3000/uploadForm";
 
         let project = {title: '', heure: '', nbrPers: 0};
         project.title = document.getElementby("activite").value;
