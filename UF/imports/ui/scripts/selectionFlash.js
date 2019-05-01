@@ -5,27 +5,28 @@ import { Session } from 'meteor/session';
 import '../templates/selectionFlash.html';
 import '../../api/filtres.js'
 import { Mongo } from "meteor/mongo";
+import { Filtres } from '../../api/filtres.js';
 
 
 
     Template.selectionFlash.events({
        'click #games': function(){
-           db.filtres.insert({_id: games})
+           Filtres.insert({_id: games})
        },
        'click #drink': function(){
-           db.filtres.insert({_id: drink})
+           Filtres.insert({_id: drink})
        },
        'click #music': function(){
-           db.filtres.insert({_id: music})
+           Filtres.insert({_id: music})
        },
        'click #sport': function(){
-           db.filtres.insert({_id: sport})
+           Filtres.insert({_id: sport})
        },
        'click #walk': function(){
-           db.filtres.insert({_id: walk})
+           Filtres.insert({_id: walk})
        },
        'click #study': function(){
-           db.filtres.insert({_id: study})
+           Filtres.insert({_id: study})
        },
        'click #filtrer': function(){
            window.location ="http://localhost:3000/main"
