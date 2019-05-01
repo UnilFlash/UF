@@ -3,6 +3,7 @@ import '../templates/creationFlash.html'
 import { Template }    from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Images } from '../../api/img.js';
+import { Flash } from '../../api/flash.js'
 
 Template.uploadForm.onCreated(function () {
   this.currentUpload = new ReactiveVar(false);
