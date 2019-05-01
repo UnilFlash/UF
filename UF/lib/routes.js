@@ -19,12 +19,6 @@ FlowRouter.route('/formulaire',{
     }
 });
 
-FlowRouter.route('/accueil',{
-    name:'accueil',
-    action(){
-        BlazeLayout.render('pageAccueil')
-    }
-});
 
 FlowRouter.route('/filtres',{
     name:'filtres',
@@ -39,10 +33,3 @@ FlowRouter.route('/main',{
         BlazeLayout.render('pagePrincipale')
     }
 });
-
-FlowRouter.route('/login',{
-    name:'login',
-    action(){
-        BlazeLayout.render('pageLogin')
-    }
-})
