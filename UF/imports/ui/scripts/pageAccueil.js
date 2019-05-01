@@ -4,11 +4,6 @@ import '../templates/pageAccueil.html'
 import { FlowRouter } from 'meteor/ostrio:flow-router-extra';
 
 
-Template.pageAccueil.helpers({
-    titre: () => "Flash"
-})
-
-
 Template.navbar.events({
     'click .js-open-login-modal'(event, instance){
 
@@ -21,7 +16,7 @@ Template.navbar.events({
         Meteor.logout();
     },
 
-    'click .js-goto-create-article' (event, instance){
+    'click .js-goto-create-flash' (event, instance){
         FlowRouter.go('/article/create');
     }
 });

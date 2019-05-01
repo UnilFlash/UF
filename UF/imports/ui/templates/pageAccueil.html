@@ -1,6 +1,4 @@
 <template name="pageAccueil">
-    <h2>UniFlash</h2>
-
     {{> navbar}}
 </template>
 
@@ -8,15 +6,15 @@
 
     <nav class="navbar navbar-light bg-light">
         <div class="container">
-            <a href="/" class="navbar-brand">Meteor Medium</a>
-            <button class="btn btn-outline-secondary mr-auto js-goto-create-article">Publier un article</button>
+            <a href="/" class="navbar-brand">UniFlash</a>
+            <button class="btn btn-outline-secondary mr-auto js-goto-create-flash">Entrez dans le monde d'UniFlash</button>
             {{#unless loggingIn}}
     
             {{#if currentUser}}
             <span class="navbar-text mr-2">
                 {{currentUser.profile.fullname}}
             </span>
-            <button class="btn btn-outline-secondary js-logout" style="background-color:red;">Déconnexion</button>
+            <button class="btn btn-outline-secondary js-logout" style="background-color:darkorange;">Déconnexion</button>
             {{else}}
             <button class="bt bt-success js-open-login-modal" style="background-color: greenyellow;">Connexion</button>
             {{/if}}
