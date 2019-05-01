@@ -3,6 +3,9 @@ import { Template } from 'meteor/templating';
 
 import '../templates/formulaireFlash.html'
 
+import { Mongo } from "meteor/mongo";
+import { Flash } from '../../api/flash';
+
 // Template.formulaireFlash.helpers()
 Template.formulaireFlash.events({
     "submit .js-formulaire-flash"(event, instance){
@@ -19,7 +22,14 @@ Template.formulaireFlash.events({
 
     },
     'click #flasher': function(){
-        window.location ="http://localhost:3000/main"
+        window.location ="http://localhost:3000/uploadForm";
+
+        let project = {title: '', heure: '', nbrPers: ''}
+        project.title = document.getElementby("activite").value;
+        project.heure = document.getElementById("heure").value;
+        project.nbrPers= document.getElementById("nbrPers").value;
+
+
     },
     'click #music': function(){
         document.getElementById("music").style.color="rgb(255,0,0,58%)"
@@ -39,5 +49,8 @@ Template.formulaireFlash.events({
     'click #games': function(){ 
         document.getElementById("games").style.color="rgb(255,0,0,58%)"
     },
+
+
 });
+
 
