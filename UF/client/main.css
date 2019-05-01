@@ -59,40 +59,22 @@ body {
   padding-top: 20px;
 }
 
-#mouton2{
-transform:rotate(180deg);
-position: absolute;
-top:0px;
-margin-left:300px;
-}
+  
+  #mouton1{
+  position: absolute;
+  height: 190px;
+  left: -50px;
+  top: 500px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  }
+  
 
-#mouton1{
-position: absolute;
-height: 190px;
-left: -50px;
-top: 500px;
--moz-transform: scaleX(-1);
--o-transform: scaleX(-1);
--webkit-transform: scaleX(-1);
-transform: scaleX(-1);
-filter: FlipH;
--ms-filter: "FlipH";
-}
 
-#reg{
-  margin-top:560px;
-  margin-left:130px;
-}
-
-#log{
-  margin-top:30px;
-  margin-left:130px;
-}
-
-#logo{
-  position:absolute;
-  top:300px;
-}
 
 #filtrer{
   width: 60px;

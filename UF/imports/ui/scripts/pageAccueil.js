@@ -8,24 +8,21 @@ Template.navbar.events({
     'click .js-open-login-modal'(event, instance){
 
         Modal.show('login_modal');
-
     },
-
+    
     'click .js-logout'(event, instance){
 
         Meteor.logout();
     },
 
-    'click .js-goto-create-flash' (event, instance){
-        FlowRouter.go('/article/create');
-    }
 });
+
 
 Template.login_modal.onCreated(function(){
     this.autorun(()=>{
         if(Meteor.userId()){
             Modal.hide('login_modal');
-        }    
+        }
 
     });
 
@@ -49,6 +46,13 @@ AccountsTemplates.addField({
 
 password.minLength = 3;
 
+
+
 AccountsTemplates.addField(email);
 AccountsTemplates.addField(password);
 
+Template.atForm.events({
+    'click #at-btn'(e, i){
+        setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
+    },
+})
