@@ -1,4 +1,6 @@
 <template name="uploadForm">
+        {{>appPhoto}}
+        {{>retour}}
     <div class="container">
         {{#with currentUpload}}
         Uploading <b>{{file.name}}</b>:
@@ -13,10 +15,14 @@
     <img src="{{imageFile.link}}" alt="img">
    <!--{{> Template.Dynamic template=main}}--> 
     </div> 
-    {{>appPhoto}}
+    
 </template>
 
 <template name="appPhoto">
     <a href="#" class="btn btn-primary">take photo</a>
     <img class="photo">
+</template>
+
+<template name="retour">
+    <button id="retour">Retour</button>
 </template>
