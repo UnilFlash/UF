@@ -24,7 +24,7 @@ Template.formulaireFlash.events({
     'click #flasher': function(){
         window.location ="http://localhost:3000/main";
 
-        let project = {title: '', heure: '', nbrPers: 0};
+        let project = {title: '', heure: '', nbrPers: ''}
         project.title = document.getElementby("activite").value;
         project.heure = document.getElementById("heure").value;
         project.nbrPers= document.getElementById("nbrPers").value;

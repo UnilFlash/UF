@@ -18,7 +18,8 @@ Template.navbar.events({
 
     'click .js-goto-create-flash' (event, instance){
         FlowRouter.go('/article/create');
-    }
+    },
+
 });
 
 Template.login_modal.onCreated(function(){
