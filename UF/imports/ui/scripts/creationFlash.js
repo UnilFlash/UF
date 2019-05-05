@@ -72,6 +72,9 @@ if(Meteor.isClient){
     }
   })
 }
+
+
+
 Template.retour.events({
   "click #retour": function(){
     window.location="http://localhost:3000/main"
