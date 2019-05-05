@@ -49,7 +49,7 @@ Template.uploadForm.events({
 });
 
 Template.appPhoto.events({
-  'click .btn btn-primary': function(e, instance) {
+  'click #pic': function(e, instance) {
       e.preventDefault();
       var cameraOptions = {
           width: 800,
@@ -57,12 +57,21 @@ Template.appPhoto.events({
       };
       MeteorCamera.getPicture(cameraOptions, function (error, data) {
          if (!error) {
-             instance.$('.photo').attr('src', data); 
+             console.log("error")
+         }else{
+           Session.set("picture",data);
+           console.log("pic")
          }
       });
   }
 });
-
+if(Meteor.isClient){
+  Template.body.helpers({
+    picture: function(){
+      return Session.get("picture");
+    }
+  })
+}
 Template.retour.events({
   "click #retour": function(){
     window.location="http://localhost:3000/main"
