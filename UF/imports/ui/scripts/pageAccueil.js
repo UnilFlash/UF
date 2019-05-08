@@ -41,8 +41,8 @@ AccountsTemplates.addField({
     required: true,
     minLength: 3,
     trim: true,
-
 });
+
 
 password.minLength = 3;
 
@@ -52,7 +52,16 @@ AccountsTemplates.addField(email);
 AccountsTemplates.addField(password);
 
 Template.atForm.events({
-    'click #at-btn'(e, i){
-        setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
+   'click #at-btn'(e, i){
+        let titre = document.querySelector("h3").innerHTML;
+        console.log(titre)
+        if(titre == "Se connecter"){
+            setTimeout(() => { FlowRouter.go("/main") }, 1000)
+        }else if(titre == "Créer un compte"){
+            setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
+        }
     },
-})
+});
+
+
+

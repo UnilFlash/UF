@@ -48,30 +48,7 @@ Template.uploadForm.events({
   }
 });
 
-Template.appPhoto.events({
-  'click #pic': function(e, instance) {
-      e.preventDefault();
-      var cameraOptions = {
-          width: 800,
-          height: 600
-      };
-      MeteorCamera.getPicture(cameraOptions, function (error, data) {
-         if (!error) {
-             console.log("error")
-         }else{
-           Session.set("picture",data);
-           console.log("pic")
-         }
-      });
-  }
-});
-if(Meteor.isClient){
-  Template.body.helpers({
-    picture: function(){
-      return Session.get("picture");
-    }
-  })
-}
+
 
 
 
