@@ -52,7 +52,7 @@ AccountsTemplates.addField(email);
 AccountsTemplates.addField(password);
 
 Template.atForm.events({
-   'click #at-btn_1'(e, i){
+   'click #at-btn'(e, i){
         setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
     },
 });
