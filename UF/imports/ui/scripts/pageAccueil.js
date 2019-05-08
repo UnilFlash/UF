@@ -53,7 +53,13 @@ AccountsTemplates.addField(password);
 
 Template.atForm.events({
    'click #at-btn'(e, i){
-        setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
+        let titre = document.querySelector("h3").innerHTML;
+        console.log(titre)
+        if(titre == "Se connecter"){
+            setTimeout(() => { FlowRouter.go("/main") }, 1000)
+        }else if(titre == "Créer un compte"){
+            setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
+        }
     },
 });
 
