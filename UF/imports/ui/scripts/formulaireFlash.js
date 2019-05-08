@@ -53,7 +53,7 @@ Template.formulaireFlash.events({
 
 });
 
-//interaction avec base de donnée
+/*interaction avec base de donnée
 Flash.insert({
     activite: activiteVal,
      date: dateVal,
@@ -63,4 +63,4 @@ Flash.insert({
      infoSupp: infoSuppVal,
      lieu: lieuVal,
     createdAt: new Date()
-});
+});*/
