@@ -41,3 +41,4 @@ FlowRouter.route('/profil',{
         BlazeLayout.render('pageProfil')
     }
 });
+

@@ -8,6 +8,7 @@ Template.navbar.events({
     'click .js-open-login-modal'(event, instance){
 
         Modal.show('login_modal');
+
     },
     
     'click .js-logout'(event, instance){
@@ -23,7 +24,6 @@ Template.login_modal.onCreated(function(){
         if(Meteor.userId()){
             Modal.hide('login_modal');
         }
-
     });
 
 });
@@ -41,27 +41,31 @@ AccountsTemplates.addField({
     required: true,
     minLength: 3,
     trim: true,
+    re:/(?=.*[a-z])(?=.*[A-Z])/,
+    errStr:'Au moins 1 minuscule et 1 majuscule',
 });
 
-
-password.minLength = 3;
-
+password.re=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/,
+password.errStr= 'Au moins 1 chiffre, 1 minuscule et 1 majuscule',
+password.minLength = 6;
 
 
 AccountsTemplates.addField(email);
 AccountsTemplates.addField(password);
 
 Template.atForm.events({
-   'click #at-btn'(e, i){
-        let titre = document.querySelector("h3").innerHTML;
-        console.log(titre)
-        if(titre == "Se connecter"){
-            setTimeout(() => { FlowRouter.go("/main") }, 1000)
-        }else if(titre == "Créer un compte"){
+'click #at-btn'(e, i){
+    let titre = document.querySelector("h3").innerHTML;
+    if(titre == "Se connecter"){
+        setTimeout(() => { FlowRouter.go("/main") }, 1000)
+    }else if(titre == "Créer un compte"){
             setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
         }
     },
+    
 });
 
 
+
+    
 
