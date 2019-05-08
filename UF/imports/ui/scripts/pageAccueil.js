@@ -8,6 +8,7 @@ Template.navbar.events({
     'click .js-open-login-modal'(event, instance){
 
         Modal.show('login_modal');
+
     },
     
     'click .js-logout'(event, instance){
@@ -48,6 +49,7 @@ password.re=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/,
 password.errStr= 'Au moins 1 chiffre, 1 minuscule et 1 majuscule',
 password.minLength = 6;
 
+
 AccountsTemplates.addField(email);
 AccountsTemplates.addField(password);
 
@@ -60,9 +62,10 @@ Template.atForm.events({
             setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
         }
     },
-        
-
+    
 });
+
+
 
     
 
