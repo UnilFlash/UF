@@ -41,8 +41,8 @@ AccountsTemplates.addField({
     required: true,
     minLength: 3,
     trim: true,
-
 });
+
 
 password.minLength = 3;
 
@@ -52,7 +52,10 @@ AccountsTemplates.addField(email);
 AccountsTemplates.addField(password);
 
 Template.atForm.events({
-    'click #at-btn'(e, i){
+   'click #at-btn_1'(e, i){
         setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
     },
-})
+});
+
+
+

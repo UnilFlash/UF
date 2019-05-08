@@ -59,23 +59,6 @@ body {
   padding-top: 20px;
 }
 
-  
-  #mouton1{
-  position: absolute;
-  height: 190px;
-  left: -50px;
-  top: 500px;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
-  }
-  
-
-
-
 #filtrer{
   width: 60px;
   background-color: rgb(255,213,0,90%);
@@ -84,7 +67,6 @@ body {
   top:500px;
   margin-left:300px;
 }
-
 
 #flasher{
   position:absolute;
