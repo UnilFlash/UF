@@ -1,7 +1,7 @@
 <template name="uploadForm">
         
     <div class="container">
-            {{>appPhoto}}
+            
             {{>retour}}
             
         {{#with currentUpload}}
@@ -9,20 +9,17 @@
         <span id="progress">{{progress.get}}%</span>
     {{else}}
     <div class="custom-file">
-        <input id="customFile" type="file"  />
+        <input id="customFile" type="file" accept="image/*" />
         
     </div>
         
     {{/with}}
-    <img class="img-fluid img-thumbnail" src="{{imageFile.link}}" alt="img">
+    <img class="img-fluid img-thumbnail mw-50 mh-50" src="{{imageFile.link}}" alt="img">
   
     </div> 
     
 </template>
 
-<template name="appPhoto">
-    <button id="pic" class="btn btn-primary">pic</button>
-</template>
 
 <template name="retour">
     <button id="retour">Retour</button>
