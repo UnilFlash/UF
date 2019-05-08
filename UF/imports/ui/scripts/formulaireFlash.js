@@ -16,7 +16,13 @@ Template.formulaireFlash.helpers({
         return `${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`
     },
     dateMax: function(){
-        return "2019-05-10"
+        let date = new Date();
+        let annee = date.getFullYear();
+        let mois = date.getMonth()+1;
+        let jour = date.getDate()+2;
+        // console.log(`${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`)
+        return `${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`
+        //return "2019-05-10"
     }
 })
 
@@ -33,9 +39,9 @@ Template.formulaireFlash.events({
         const infoSuppVal= event.target.infoSupp.value;
         const lieuVal= event.target.lieu.value;
 
-        console.log (lieuVal);
+        //console.log (lieuVal);
     
-        //interaction avec base de donnée
+        //interaction avec base de données récupère les données entrées dans les input du formulaire pour l'insérer dans la base de données
         Flash.insert({
             activite: activiteVal,
             date: dateVal,
@@ -77,6 +83,3 @@ Template.formulaireFlash.events({
 
 
 });
-
-//getdate
-//daterangepicker.com atmosphere
