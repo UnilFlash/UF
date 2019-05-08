@@ -14,15 +14,14 @@
     </div>
         
     {{/with}}
-    <img src="{{imageFile.link}}" alt="img">
-   <!--{{> Template.Dynamic template=main}}--> 
+    <img class="img-fluid img-thumbnail" src="{{imageFile.link}}" alt="img">
+  
     </div> 
     
 </template>
 
 <template name="appPhoto">
-    <a href="#" class="btn btn-primary">take photo</a>
-    <img class="photo">
+    <button id="pic" class="btn btn-primary">pic</button>
 </template>
 
 <template name="retour">
