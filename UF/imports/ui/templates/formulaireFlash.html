@@ -18,10 +18,10 @@
         <label for="IdtypeActivite">Sélectionne le type d'activité</label>
         <br><br>
         <h4>Activité</h4>
-        <input type="text" id="activite" value="activite" required>
+        <input type="text" id="activite" value="" required>
         <br><br>
         <h4>Date</h4>
-        <input type="date" id="date" min="2019.04.04" max="2019.04.04" value="date" required><br> <!--ajouter date du jour ou max 48h avant-->
+        <input type="date" id="date" min="{{dateNow}}" max="{{dateMax}}" value="date" required><br> <!--ajouter date du jour ou max 48h avant-->
         <br>
         <h4>Heure</h4>
         <input type="time" id="heure" value="time"><br>
