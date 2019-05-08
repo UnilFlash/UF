@@ -33,3 +33,11 @@ FlowRouter.route('/main',{
         BlazeLayout.render('pagePrincipale')
     }
 });
+
+
+FlowRouter.route('/profil',{
+    name:'profil',
+    action(){
+        BlazeLayout.render('pageProfil')
+    }
+});

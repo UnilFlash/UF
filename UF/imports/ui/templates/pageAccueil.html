@@ -1,24 +1,20 @@
 <template name="pageAccueil">
+        <div class="align-mt-auto" style="text-align:left;margin-left:50px"><img src="./images/mouton_r.png" width="200px;"  alt="Responsive image" >
+        </div>
     {{> navbar}}
-    <div class="text-center"><img src="./images/UniFlash_logo.png" width="600px;" class="rounded col-xs-12,col-lg-8" id="logo"></div>
+
+    <div class="align-mt-auto text-center"><img src="./images/UniFlash_logo.png" width="600px;" alt="Responsive image"></div>
+
+    <div class="align-mt-auto" style="text-align:right;margin-right:50px;"><img src="./images/mouton_1.png" width="200px;" alt="Responsive image"></div>
+   
 </template>
 
 <template name="navbar">
 
-    <nav class="navbar navbar-light bg-light">
+    <nav class="">
         <div class="container">
-            {{#unless loggingIn}}
-    
-            {{#if currentUser}}
-            <span class="navbar-text mr-2">
-                {{currentUser.profile.fullname}}
-            </span>
-            <button class="btn btn-outline-secondary js-logout" style="background-color:rgba(255, 213, 0, 0.76);">Déconnexion</button>
-            {{else}}
-            <button class="bt bt-success js-open-login-modal" style="background-color: rgba(255, 213, 0, 0.76);">Entre dans le monde d'UniFlash</button>
-            {{/if}}
-    
-            {{/unless}}
+   
+            <button class="bt bt-success js-open-login-modal" style="background-color: rgba(255, 213, 0, 0.76);margin-left:90px;margin-top:30px;">Entre dans le monde d'UniFlash</button>      
            
         </div>
     </nav>
