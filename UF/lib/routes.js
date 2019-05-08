@@ -41,3 +41,12 @@ FlowRouter.route('/profil',{
         BlazeLayout.render('pageProfil')
     }
 });
+
+//if(Meteor.isClient){
+    //Accounts.onLogin(function(){
+        //FlowRouter.go('main');
+    //});
+    //Accounts.onLogout(function(){
+        //FlowRouter.go('pageAccueil');
+    //});
+    
