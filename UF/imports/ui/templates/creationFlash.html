@@ -9,12 +9,12 @@
         <span id="progress">{{progress.get}}%</span>
     {{else}}
     <div class="custom-file">
-        <input id="customFile" type="file" accept="image/*" />
+        <input id="customFile" type="file" accept="image/*" capture="environment" />
         
     </div>
         
     {{/with}}
-    <img class="img-fluid img-thumbnail mw-50 mh-50" src="{{imageFile.link}}" alt="img">
+    <img class="img-fluid img-responsive center-block img-thumbnail mw-50 mh-50" src="{{imageFile.link}}" alt="img">
   
     </div> 
     
