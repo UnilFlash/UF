@@ -42,3 +42,11 @@ FlowRouter.route('/profil',{
     }
 });
 
+//if(Meteor.isClient){
+    //Accounts.onLogin(function(){
+        //FlowRouter.go('main');
+    //});
+    //Accounts.onLogout(function(){
+        //FlowRouter.go('pageAccueil');
+    //});
+    
