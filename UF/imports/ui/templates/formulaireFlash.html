@@ -4,7 +4,7 @@
             </head>
             <div class="align-mt-auto text-center"><h1>Formulaire Flashiste</h1></div>
 
-    <form class="js-formulaire-flash" required>
+    <form class="js-formulaire-flash container" required>
         
         
         <br><br>
@@ -44,7 +44,11 @@
         <textarea name="lieu" id="lieu" cols="30" rows="7" required></textarea>
         <br><br>
         <br><br>
-        <button  type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
+        {{>uploadForm}}
+        <div class="text-center mx-auto d-block">
+            <button  type="submit" id="flasher"><img class="img-fluid" src="./images/flash.png " height="90" width="90"></button>
+        </div>
+        
 
         <!--ajouter une carte maps interactive-->
         
