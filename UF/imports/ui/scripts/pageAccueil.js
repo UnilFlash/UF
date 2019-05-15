@@ -53,17 +53,6 @@ password.minLength = 6;
 AccountsTemplates.addField(email);
 AccountsTemplates.addField(password);
 
-Template.atForm.events({
-'click #at-btn'(e, i){
-    let titre = document.querySelector("h3").innerHTML;
-    if(titre == "Se connecter"){
-        setTimeout(() => { FlowRouter.go("/main") }, 1000)
-    }else if(titre == "Créer un compte"){
-            setTimeout(() => { FlowRouter.go("/filtres") }, 1000)
-        }
-    },
-    
-});
 
 
 

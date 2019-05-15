@@ -7,9 +7,12 @@ FlowRouter.route('/uploadForm',{
 
 FlowRouter.route('/',{
     name:'accueil',
-    action(){
-        BlazeLayout.render('pageAccueil')
+    action(){if(Meteor.userId()){
+        FlowRouter.go("/filtres");
+    }else{
+        BlazeLayout.render('pageAccueil');
     }
+}
 });
 
 FlowRouter.route('/formulaire',{
@@ -19,11 +22,14 @@ FlowRouter.route('/formulaire',{
     }
 });
 
-
 FlowRouter.route('/filtres',{
     name:'filtres',
     action(){
-        BlazeLayout.render('selectionFlash')
+        if(Meteor.userId()){
+            BlazeLayout.render('selectionFlash')
+        }else{
+            FlowRouter.go("/");
+        }
     }
 });
 
