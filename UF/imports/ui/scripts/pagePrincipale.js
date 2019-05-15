@@ -20,4 +20,12 @@ Template.lienCreationFlash.helpers({
         return Images.find()
     }
   });
+
+
+  Template.deconnexion.events({
+	'click .js-logout'(event, instance){
+		FlowRouter.go('/');
+	}
+});
+
   
