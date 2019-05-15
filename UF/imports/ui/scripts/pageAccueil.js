@@ -2,8 +2,6 @@ import { FlowRouter } from 'meteor/ostrio:flow-router-extra';
 import { Template }   from 'meteor/templating';
 import '../templates/pageAccueil.html'
 
-import { Filtres } from '../../api/filtres.js';
-
 
 Template.navbar.events({
 	'click .js-open-login-modal'(event, instance){
