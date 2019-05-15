@@ -7,7 +7,8 @@ FlowRouter.route('/uploadForm',{
 
 FlowRouter.route('/',{
     name:'accueil',
-    action(){if(Meteor.userId()){
+    action(){
+        if(Meteor.userId()){
         FlowRouter.go("/filtres");
     }else{
         BlazeLayout.render('pageAccueil');
