@@ -14,7 +14,7 @@ Template.uploadForm.helpers({
     return Template.instance().currentUpload.get();
   },
   imageFile(){
-      return Images.findOne()
+    return Images.findOne({}, { sort: { _id: 0 } })
   }
 });
 
@@ -29,7 +29,7 @@ Template.uploadForm.events({
         streams: 'dynamic',
         chunkSize: 'dynamic'
       }, false);
-
+      console.log(upload.config.fileId)
       upload.on('start', function () {
         template.currentUpload.set(this);
       });
