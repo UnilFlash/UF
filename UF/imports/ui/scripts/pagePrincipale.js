@@ -31,6 +31,9 @@ Template.lienCreationFlash.helpers({
         let image = Flash.findOne({_id: flashId}, {fields: {idImage: 1}})
         let returnedImage = Images.findOne({_id: image.idImage})
         return returnedImage
+    },
+    description(){
+        return this.infoSupp
     }
   });
 
