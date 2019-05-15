@@ -42,8 +42,4 @@ Template.lienCreationFlash.helpers({
 	}
 });
 
-<<<<<<< HEAD
-=======
- 
->>>>>>> parent of 182f906... Merge branch 'master' of https://github.com/UnilFlash/UF
   
