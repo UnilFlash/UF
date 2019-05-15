@@ -42,3 +42,10 @@ FlowRouter.route('/main',{
 });
 
 
+FlowRouter.route('/profil',{
+    name:'profil',
+    action(){
+        BlazeLayout.render('pageProfil')
+    }
+});
+
