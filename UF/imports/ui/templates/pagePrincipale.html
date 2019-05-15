@@ -12,9 +12,9 @@
         <br><br>
         <h4>{{project.title}}</h4>
    </div> 
-   {{#each flash}}
+   {{#each imageFile.each}}
    <div class="card container">
-       <img class=" img-thumbnail img-responsive card-img-top center-block mw-50 align-middle card-img" src="{{image.link}}" alt="img" >
+       <img class=" img-thumbnail img-responsive card-img-top center-block mw-50 align-middle card-img" src="{{this.link}}" alt="img" >
        <div class="card-body">
            <p id="description" class="card-text">blabla</p>
        </div>
@@ -27,7 +27,7 @@
 
 <template name="deconnexion">
     <nav>
-        <div class="container align-mt-auto">
+        <div class="container ">
             <button class="bt btn-outline-secondary js-logout" style="background-color: rgba(255, 213, 0, 0.76);top:50px;">Se déconnecter</button>      
         </div>
     </nav>
