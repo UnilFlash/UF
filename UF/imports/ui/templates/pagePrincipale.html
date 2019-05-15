@@ -10,17 +10,18 @@
         <div class="align-mt-auto text-center"><h1>Flashes</h1></div>
         <br><br>
         <h4>{{project.title}}</h4>
-       <div class="container align-bottom align-middle">
-           <button type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
-       </div> 
-
-    <button id="lienCF">Crée un flash</button>
-    <h1>yo</h1></div> 
-    {{#each imageFile.each}}
-    <div class="container">
-        <img class=" img-thumbnail img-responsive center-block w-50 align-middle" src="{{this.link}}" alt="img" >
-    </div> 
-    {{/each}}
+   </div> 
+   {{#each imageFile.each}}
+   <div class="card container">
+       <img class=" img-thumbnail img-responsive card-img-top center-block mw-50 align-middle card-img" src="{{this.link}}" alt="img" >
+       <div class="card-body">
+           <p id="description" class="card-text">blabla</p>
+       </div>
+   </div> 
+   {{/each}}
+   <div class="align-bottom align-middle">
+   <button type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
+</div>
 </template>
 
 <template name="deconnexion">
