@@ -25,11 +25,11 @@ Template.lienCreationFlash.helpers({
     }
   });
 
-
-  Template.deconnexion.events({
+ Template.deconnexion.events({
 	'click .js-logout'(event, instance){
 		FlowRouter.go('/');
 	}
 });
 
+ 
   

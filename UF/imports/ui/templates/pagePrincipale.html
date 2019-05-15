@@ -6,32 +6,28 @@
 </template>
 
 <template name = "lienCreationFlash">
-    <button id="preferences">Préferences Filtres</button>
        <div class="container">
-        <div class="container align-mt-auto text-center"><h1>Flashes</h1></div>
+        <div class="align-mt-auto text-center"><h1>Flashes</h1></div>
         <br><br>
         <h4>{{project.title}}</h4>
-       <div class="align-bottom align-middle">
+       <div class="container align-bottom align-middle">
            <button type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
        </div> 
 
-   </div> 
-   {{#each imageFile.each}}
-   <div class="card container">
-       <img class=" img-thumbnail img-responsive card-img-top center-block mw-50 align-middle card-img" src="{{this.link}}" alt="img" >
-       <div class="card-body">
-           <p id="description" class="card-text">blabla</p>
-       </div>
-   </div> 
-   {{/each}}
+    <button id="lienCF">Crée un flash</button>
+    <h1>yo</h1></div> 
+    {{#each imageFile.each}}
+    <div class="container">
+        <img class=" img-thumbnail img-responsive center-block w-50 align-middle" src="{{this.link}}" alt="img" >
+    </div> 
+    {{/each}}
 </template>
 
 <template name="deconnexion">
     <nav>
         <div class="container">
-            <button class="bt btn-outline-secondary js-logout" style="background-color: rgba(255, 213, 0, 0.76);margin-left:90px;margin-top:30px;">Logout</button>      
+            <button class="bt btn-outline-secondary js-logout" style="background-color: rgba(255, 213, 0, 0.76);margin-left:90px;margin-top:30px;">Entre dans le monde d'UniFlash</button>      
         </div>
     </nav>
 </template>
-
 
