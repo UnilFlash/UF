@@ -1,8 +1,7 @@
 import { Template } from 'meteor/templating';
 //import { Flash } from '../../api/flash';
 import { Images } from '../../api/img.js';
-
-
+import { Flash } from '../../api/flash.js';
 
 import '../templates/pagePrincipale.html';
 
