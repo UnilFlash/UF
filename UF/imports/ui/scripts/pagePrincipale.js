@@ -2,6 +2,8 @@ import { Template } from 'meteor/templating';
 //import { Flash } from '../../api/flash';
 import { Images } from '../../api/img.js';
 
+
+
 import '../templates/pagePrincipale.html';
 
 
@@ -27,7 +29,8 @@ Template.lienCreationFlash.helpers({
 
  Template.deconnexion.events({
 	'click .js-logout'(event, instance){
-		FlowRouter.go('/');
+        if(Meteor.userId()){
+		FlowRouter.go('/');}
 	}
 });
 
