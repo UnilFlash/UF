@@ -21,7 +21,7 @@
         <input type="text" id="activite" value="" required>
         <br><br>
         <h4>Date</h4>
-        <input type="date" id="date" min="{{dateNow}}" max="{{dateMax}}" value="date" required><br> <!--ajouter date du jour ou max 48h avant-->
+        <input type="date" id="date" min="{{dateNow}}" max="{{dateMax}}" value="date" required><br>
         <br>
         <h4>Heure</h4>
         <input type="time" id="heure" value="time"><br>
@@ -48,6 +48,31 @@
         <button  type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
 
         <!--ajouter une carte maps interactive-->
+    
+        <style type="text/css">
+        #div_carte {
+        height : 300px; /* IMPERATIF */
+        width : 300px;
+        margin : auto;
+        border : 1px solid #888;
+        }
+        </style>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+        function initCarte(){
+        // création de la carte
+        var oMap = new google.maps.Map( document.getElementById( 'div_carte'),{
+        'center' : new google.maps.LatLng( 46.5210896,6.5714059),
+        'zoom' : 12,
+        'mapTypeId' : google.maps.MapTypeId.ROADMAP
+        });
+        }
+        // init lorsque la page est chargée
+        google.maps.event.addDomListener( window, 'load', initCarte);
+        </script>
+        <h1>Titre de la carte</h1>
+        <div id="div_carte"></div>
         
+          
     </form>
 </template>

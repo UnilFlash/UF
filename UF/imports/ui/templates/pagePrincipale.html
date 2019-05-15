@@ -2,17 +2,14 @@
 
 <template  name="pagePrincipale">
     {{>lienCreationFlash}}
+    {{> deconnexion}}
 </template>
 
 <template name = "lienCreationFlash">
        <div class="container">
-        <div class="container align-mt-auto text-center"><h1>Flashes</h1></div>
+        <div class="align-mt-auto text-center"><h1>Flashes</h1></div>
         <br><br>
         <h4>{{project.title}}</h4>
-       <div class="align-bottom align-middle">
-           <button type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
-       </div> 
-
    </div> 
    {{#each flash}}
    <div class="card container">
@@ -22,5 +19,16 @@
        </div>
    </div> 
    {{/each}}
+   <div class="align-bottom align-middle">
+   <button type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
+</div>
+</template>
+
+<template name="deconnexion">
+    <nav>
+        <div class="container">
+            <button class="bt btn-outline-secondary js-logout" style="background-color: rgba(255, 213, 0, 0.76);margin-left:90px;margin-top:30px;">Logout</button>      
+        </div>
+    </nav>
 </template>
 
