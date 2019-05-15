@@ -1,8 +1,9 @@
 
 
 <template  name="pagePrincipale">
-    {{>lienCreationFlash}}
     {{> deconnexion}}
+    {{>lienCreationFlash}}
+
 </template>
 
 <template name = "lienCreationFlash">
@@ -26,8 +27,8 @@
 
 <template name="deconnexion">
     <nav>
-        <div class="container">
-            <button class="bt btn-outline-secondary js-logout" style="background-color: rgba(255, 213, 0, 0.76);margin-left:90px;margin-top:30px;">Logout</button>      
+        <div class="container align-mt-auto">
+            <button class="bt btn-outline-secondary js-logout" style="background-color: rgba(255, 213, 0, 0.76);top:50px;">Se déconnecter</button>      
         </div>
     </nav>
 </template>
