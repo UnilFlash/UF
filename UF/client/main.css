@@ -4,11 +4,6 @@ body {
   background-color: #BBCAE8; 
 }
 
-#iconesTitre{
-  max-width: 400px;
-  margin: auto;
-}
-
 .gallery{
   margin: 10px;
   float: left;
