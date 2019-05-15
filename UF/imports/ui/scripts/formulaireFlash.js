@@ -80,6 +80,4 @@ Template.formulaireFlash.events({
         e.preventDefault();
         document.getElementById("games").style.color="rgb(255,0,0,58%)"
     },
-
-
 });
