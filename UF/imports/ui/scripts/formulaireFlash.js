@@ -50,6 +50,7 @@ Template.formulaireFlash.events({
             case: caseVal,
             infoSupp: infoSuppVal,
             lieu: lieuVal,
+
             createdAt: new Date()
         });
 
