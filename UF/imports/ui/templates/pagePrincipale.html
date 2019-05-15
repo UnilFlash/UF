@@ -9,15 +9,17 @@
         <h1>Flashes </h1>
         <br><br>
         <h4>{{project.title}}</h4>
-       <div class="container align-bottom align-middle">
+       <div class="align-bottom align-middle">
            <button type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
        </div> 
 
-    <button id="lienCF">Crée un flash</button>
-    <h1>yo</h1></div> 
+   </div> 
     {{#each imageFile.each}}
-    <div class="container">
-        <img class=" img-thumbnail img-responsive center-block w-50 align-middle" src="{{this.link}}" alt="img" >
+    <div class="card container">
+        <img class=" img-thumbnail img-responsive card-img-top center-block mw-50 align-middle card-img" src="{{this.link}}" alt="img" >
+        <div class="card-body">
+            <p class="card-text">blabla</p>
+        </div>
     </div> 
     {{/each}}
 </template>
