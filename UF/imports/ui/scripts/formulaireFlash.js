@@ -7,6 +7,7 @@ import '../templates/formulaireFlash.html'
 import { Mongo } from "meteor/mongo";
 import { Flash } from '../../api/flash';
 
+//limitation pour l'input date au jour même
 Template.formulaireFlash.helpers({
     dateNow: function(){
         let date = new Date();
@@ -16,6 +17,7 @@ Template.formulaireFlash.helpers({
         // console.log(`${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`)
         return `${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`
     },
+    //limitation pour l'input date au jour même + 48h
     dateMax: function(){
         let date = new Date();
         let annee = date.getFullYear();
@@ -23,11 +25,11 @@ Template.formulaireFlash.helpers({
         let jour = date.getDate()+2;
         // console.log(`${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`)
         return `${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`
-        //return "2019-05-10"
+        
     }
 })
 
-// Template.formulaireFlash.helpers()
+// conserve dans le cache les informations insérées dans les inputs du formulaire
 Template.formulaireFlash.events({
     "submit .js-formulaire-flash"(event, instance){
         event.preventDefault();
@@ -40,7 +42,6 @@ Template.formulaireFlash.events({
         const infoSuppVal= event.target.infoSupp.value;
         const lieuVal= event.target.lieu.value;
 
-        //console.log (lieuVal);
     
         //interaction avec base de données récupère les données entrées dans les input du formulaire pour l'insérer dans la base de données
         Flash.insert({
@@ -54,9 +55,9 @@ Template.formulaireFlash.events({
             createdAt: new Date(),
             idImage: Session.get("imageId"),
         });
-
+//redirection vers la page principale
         FlowRouter.go("/main")
-
+//en cliquant sur le type d'activité la pastille change de couleur
     },
     'click #music': function(e){
         e.preventDefault();

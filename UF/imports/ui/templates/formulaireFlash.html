@@ -4,9 +4,9 @@
             </head>
             <div class="align-mt-auto text-center"><h1>Formulaire Flashiste</h1></div>
 
-    <form class="js-formulaire-flash container" required>
+    <form class="js-formulaire-flash" required>
         
-        
+        <!--bouton choix activité-->
         <br><br>
         <button  class ="fas fa-guitar choix" id="music" value="music"></button>
         <button  class ="fas fa-chess choix"  id="games" value="games"></button>
@@ -17,9 +17,11 @@
         <br>
         <label for="IdtypeActivite">Sélectionne le type d'activité</label>
         <br><br>
+        <!--input, texte, date, heure, nombre, textarea-> avec champs obligatoire-->
         <h4>Activité</h4>
         <input type="text" id="activite" value="" required>
         <br><br>
+        <!--input date avec limite min/max relié au js-->
         <h4>Date</h4>
         <input type="date" id="date" min="{{dateNow}}" max="{{dateMax}}" value="date" required><br>
         <br>
@@ -44,14 +46,10 @@
         <textarea name="lieu" id="lieu" cols="30" rows="7" required></textarea>
         <br><br>
         <br><br>
-        {{>uploadForm}}
-        <div class="text-center mx-auto d-block">
-            <button  type="submit" id="flasher"><img class="img-fluid" src="./images/flash.png " height="90" width="90"></button>
-        </div>
-        
+        <!--bouton de type submit pour que lorsqu'on clique les champs du formulaires soient envoyés dans la BD-->
+        <button  type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
 
         <!--ajouter une carte maps interactive-->
-        
           
     </form>
 </template>
