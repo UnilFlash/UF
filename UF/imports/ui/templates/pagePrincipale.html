@@ -11,10 +11,6 @@
         <div class="container align-mt-auto text-center"><h1>Flashes</h1></div>
         <br><br>
         <h4>{{project.title}}</h4>
-       <div class="align-bottom align-middle">
-           <button type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
-       </div> 
-
    </div> 
    {{#each imageFile.each}}
    <div class="card container">
@@ -24,6 +20,9 @@
        </div>
    </div> 
    {{/each}}
+   <div class="align-bottom align-middle">
+   <button type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
+</div>
 </template>
 
 <template name="deconnexion">
