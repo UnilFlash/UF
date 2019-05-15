@@ -28,8 +28,8 @@ kadira:blaze-layout
 ostrio:flow-router-extra
 mdg:camera
 
-accounts-password
-useraccounts:bootstrap
+accounts-password               # User management
+useraccounts:bootstrap          # GUI User login and registration
 
 alexwine:bootstrap-4
 peppelg:bootstrap-3-modal
