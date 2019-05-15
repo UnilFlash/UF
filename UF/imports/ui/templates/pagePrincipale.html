@@ -6,7 +6,7 @@
 
 <template name = "lienCreationFlash">
        <div class="container">
-        <div class="align-mt-auto text-center"><h1>Flashes</h1></div>
+        <div class="container align-mt-auto text-center"><h1>Flashes</h1></div>
         <br><br>
         <h4>{{project.title}}</h4>
        <div class="align-bottom align-middle">
@@ -14,13 +14,13 @@
        </div> 
 
    </div> 
-    {{#each imageFile.each}}
-    <div class="card container">
-        <img class=" img-thumbnail img-responsive card-img-top center-block mw-50 align-middle card-img" src="{{this.link}}" alt="img" >
-        <div class="card-body">
-            <p class="card-text">blabla</p>
-        </div>
-    </div> 
-    {{/each}}
+   {{#each imageFile.each}}
+   <div class="card container">
+       <img class=" img-thumbnail img-responsive card-img-top center-block mw-50 align-middle card-img" src="{{this.link}}" alt="img" >
+       <div class="card-body">
+           <p id="description" class="card-text">blabla</p>
+       </div>
+   </div> 
+   {{/each}}
 </template>
 
