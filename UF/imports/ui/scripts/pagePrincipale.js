@@ -37,5 +37,12 @@ Template.lienCreationFlash.helpers({
 
 
 
+  Template.deconnexion.events({
+        'click .js-logout'(event, instance){
+            if(Meteor.userId()){
+            FlowRouter.go('/');}
+        }
+    });
+
  
   
