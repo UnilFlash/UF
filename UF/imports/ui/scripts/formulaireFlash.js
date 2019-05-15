@@ -1,5 +1,4 @@
 import { Template } from 'meteor/templating';
-import { Session } from "meteor/session";
 
 
 import '../templates/formulaireFlash.html'
@@ -51,8 +50,8 @@ Template.formulaireFlash.events({
             case: caseVal,
             infoSupp: infoSuppVal,
             lieu: lieuVal,
-            createdAt: new Date(),
-            idImage: Session.get("imageId"),
+
+            createdAt: new Date()
         });
 
         FlowRouter.go("/main")
