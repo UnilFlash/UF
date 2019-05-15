@@ -3,7 +3,8 @@ import '../templates/creationFlash.html'
 import { Template }    from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Images } from '../../api/img.js';
-import { Flash } from '../../api/flash.js'
+import { Flash } from '../../api/flash.js';
+import { Session } from "meteor/session";
 
 Template.uploadForm.onCreated(function () {
   this.currentUpload = new ReactiveVar(false);
@@ -29,7 +30,7 @@ Template.uploadForm.events({
         streams: 'dynamic',
         chunkSize: 'dynamic'
       }, false);
-      console.log(upload.config.fileId)
+      Session.set("imageId", upload.config.fileId)
       upload.on('start', function () {
         template.currentUpload.set(this);
       });
