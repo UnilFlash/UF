@@ -1,7 +1,8 @@
 import { Template } from 'meteor/templating';
 //import { Flash } from '../../api/flash';
 import { Images } from '../../api/img.js';
-
+import { Flash } from '../../api/flash.js';
+import { Session } from 'meteor/meteor'
 import '../templates/pagePrincipale.html';
 
 
@@ -20,15 +21,24 @@ Template.lienCreationFlash.helpers({
     currentUpload() {
       return Template.instance().currentUpload.get();
     },
-    imageFile(){
-        return Images.find()
+    flash(){
+        return Flash.find()
+    },
+    image(){
+        let flashId = this._id;
+        let image = Flash.findOne({_id: flashId}, {fields: {idImage: 1}})
+        let returnedImage = Images.findOne({_id: image.idImage})
+        return returnedImage
+    },
+    description(){
+        return this.infoSupp
     }
   });
 
-
-  Template.deconnexion.events({
+ Template.deconnexion.events({
 	'click .js-logout'(event, instance){
-		FlowRouter.go('/');
+        if(Meteor.userId()){
+		FlowRouter.go('/');}
 	}
 });
 
