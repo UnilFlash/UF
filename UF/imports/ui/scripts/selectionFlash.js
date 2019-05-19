@@ -34,6 +34,7 @@ import { Mongo } from "meteor/mongo";
 
     Template.selectionFlash.events({
         'click #games': function(){
+            event.preventDefault();
             document.getElementById("gamesicone").style.color="rgb(255,0,0,58%)";
             Meteor.users.update(Meteor.userId(), { $set: { tag : {
              games: true ? false : true,
@@ -58,9 +59,7 @@ import { Mongo } from "meteor/mongo";
        },
        'click #music': function(){
            document.getElementById("musicicone").style.color="rgb(255,0,0,58%)";
-           Meteor.users.insert({
-            "filtres" : "music"
-            },{upsert:true})
+           Meteor.users.update("HzgCcfz7mPFSh6p9q",{customData : {filtre: "music"}})
        },
        'click #sport': function(){
            document.getElementById("sporticone").style.color="rgb(255,0,0,58%)";
@@ -81,6 +80,7 @@ import { Mongo } from "meteor/mongo";
         } } } )
        },
        'click #filtrer': function(){
-            window.location ="http://localhost:3000/main"
+           window.location ="http://localhost:3000/main"
+           
        }
     })
