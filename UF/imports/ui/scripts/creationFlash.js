@@ -46,7 +46,10 @@ Template.uploadForm.events({
 
       upload.start();
     }
-  }
+  },
+  'click #flasher': function () {
+    window.location = 'http://localhost:3000/formulaire'
+}
 });
 
 

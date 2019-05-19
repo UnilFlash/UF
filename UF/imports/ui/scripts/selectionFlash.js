@@ -7,7 +7,6 @@ import { Meteor } from "meteor/meteor";
 import '../templates/selectionFlash.html';
 import '../../api/filtres.js'
 import { Mongo } from "meteor/mongo";
-import { Filtres } from '../../api/filtres.js';
 
 
 
@@ -59,9 +58,9 @@ import { Filtres } from '../../api/filtres.js';
        },
        'click #music': function(){
            document.getElementById("musicicone").style.color="rgb(255,0,0,58%)";
-           Meteor.users.update(Meteor.userId(), { $set: { tag : {
-            music: true ? false : true,
-        } } } )
+           Meteor.users.insert({
+            "filtres" : "music"
+            },{upsert:true})
        },
        'click #sport': function(){
            document.getElementById("sporticone").style.color="rgb(255,0,0,58%)";
