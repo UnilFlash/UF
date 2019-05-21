@@ -34,6 +34,12 @@ Template.formulaireFlash.events({
     "submit .js-formulaire-flash"(event, instance){
         event.preventDefault();
 
+        const musicVal= event.target.music.value;
+        const gamesVal= event.target.games.value;
+        const drinkVal= event.target.drink.value;
+        const studyVal= event.target.study.value;
+        const sportVal= event.target.sport.value;
+        const walkVal= event.target.walk.value;
         const activiteVal= event.target.activite.value;
         const dateVal= event.target.date.value;
         const heureVal= event.target.heure.value;
@@ -45,6 +51,12 @@ Template.formulaireFlash.events({
     
         //interaction avec base de données récupère les données entrées dans les input du formulaire pour l'insérer dans la base de données
         Flash.insert({
+            music: musicVal,
+            games: gamesVal,
+            drink: drinkVal,
+            study: studyVal,
+            sport: sportVal,
+            walk: walkVal,
             activite: activiteVal,
             date: dateVal,
             heure: heureVal,
