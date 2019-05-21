@@ -29,6 +29,14 @@ Template.formulaireFlash.helpers({
     }
 })
 
+/*Template.formulaireFlash.events({
+    "onclick.musicVal= event.target.music.value"(event, instance){
+        event.preventDefault();
+
+        Flash.insert({
+            music: musicVal,});
+        
+        });*/
 // conserve dans le cache les informations insérées dans les inputs du formulaire
 Template.formulaireFlash.events({
     "submit .js-formulaire-flash"(event, instance){
