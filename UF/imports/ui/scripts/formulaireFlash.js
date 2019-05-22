@@ -29,14 +29,6 @@ Template.formulaireFlash.helpers({
     }
 })
 
-/*Template.formulaireFlash.events({
-    "onclick.musicVal= event.target.music.value"(event, instance){
-        event.preventDefault();
-
-        Flash.insert({
-            music: musicVal,});
-        
-        });*/
 // conserve dans le cache les informations insérées dans les inputs du formulaire
 Template.formulaireFlash.events({
     "submit .js-formulaire-flash"(event, instance){
@@ -52,9 +44,11 @@ Template.formulaireFlash.events({
         const dateVal= event.target.date.value;
         const heureVal= event.target.heure.value;
         const nbrPersVal= event.target.nbrPers.value;
-        const caseVal= event.target.case.value;
+        const caseVal= event.target.case.checked;
         const infoSuppVal= event.target.infoSupp.value;
         const lieuVal= event.target.lieu.value;
+
+        
 
     
         //interaction avec base de données récupère les données entrées dans les input du formulaire pour l'insérer dans la base de données

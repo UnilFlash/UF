@@ -2,11 +2,11 @@
         <head>
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
             </head>
-            <div class="align-mt-auto text-center container"><h1>Formulaire Flashiste</h1></div>
+            <div class="align-mt-auto text-center"><h1>Formulaire Flashiste</h1></div>
 
-    <form class="js-formulaire-flash container" required>
+    <form class="js-formulaire-flash" required>
         
-        <!--bouton choix activité-->
+        <!--bouton choix type d'activité-->
         <br><br>
         <button  class ="fas fa-guitar choix" id="music" value="music"></button>
         <button  class ="fas fa-chess choix"  id="games" value="games"></button>
@@ -26,12 +26,12 @@
         <input type="date" id="date" min="{{dateNow}}" max="{{dateMax}}" value="date" required><br>
         <br>
         <h4>Heure</h4>
-        <input type="time" id="heure" value="time"><br> 
+        <input type="time" id="heure"><br> 
         <br>
         <h4>Nombre de personnes</h4>
         <input type="number" id="nbrPers" min="0" value="number">
         <br><br>
-        <input type="checkbox" name="case" value="valeur attachée au bouton">
+        <input type="checkbox" id="case" name="case cochée">
         <label for="IdCheckBox">Par équipe</label> 
         <br>
         <br>
@@ -47,10 +47,9 @@
         <br><br>
         <br><br>
         <!--bouton de type submit pour que lorsqu'on clique les champs du formulaires soient envoyés dans la BD-->
-        {{>uploadForm}}
-           
-            <button  type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
-       
+        
+        <button  type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
+
         <!--ajouter une carte maps interactive-->   
     </form>
 </template>
