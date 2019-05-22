@@ -8,7 +8,7 @@ import '../templates/pagePrincipale.html';
 
 import '../templates/pagePrincipale.html'
 
-Template.lienCreationFlash.events({
+Template.lienCreationFlash.events({ 
     'click #flasher': function () {
         window.location = 'http://localhost:3000/formulaire'
     },
@@ -32,7 +32,7 @@ Template.lienCreationFlash.helpers({
         //liaison de l'image à la base de données des flashs
     },
     description(){
-        return this.infoSupp
+        return this.activite
     }
   });
 
