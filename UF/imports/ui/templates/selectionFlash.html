@@ -2,35 +2,37 @@
     <head>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     </head>
+    <form class="js-filtres">
     <div class="align-mt-auto text-center"><h1 id="iconesTitre">Tes types de Flash</h1></div>
     <div class="colonnes">
-    <div class="gallery" id="games" value="games">
+    <div class="gallery" id="games" value="false">
         <i class="fas fa-chess" id="gamesicone"></i>
         <div class="desc">Si t'aimes les jeux</div>
    </div>
-    <div class="gallery" id="music" value="music">
+    <div class="gallery" id="music" value="false">
         <i class="fas fa-guitar" id="musicicone"></i>
         <div class="desc">Si t'aimes la musique</div>
     </div>
-    <div class="gallery" id="drink" value="drink">
+    <div class="gallery" id="drink" value="false">
         <i class="fas fa-beer" id="drinkicone"></i>
         <div class="desc">Si t'aimes parler derrière une bière</div>
     </div>
-    <div class="gallery" id="study" value="study">
+    <div class="gallery" id="study" value="false">
         <i class="fas fa-book-open" id="studyicone"></i>
         <div class="desc">Si t'aimes reviser en groupe</div>
     </div>
-    <div class="gallery" id="sport" value="sport">
+    <div class="gallery" id="sport" value="false">
         <i class="far fa-futbol" id="sporticone"></i>
         <div class="desc">Sport en groupe > Sport en solitaire</div>
     </div>
-    <div class="gallery" id="walk" value="walk">
+    <div class="gallery" id="walk" value="false">
         <i class="fas fa-hiking" id="walkicone"></i>
         <div class="desc">Si t'aimes te promenader</div>
     </div>
 </div><br><br><br><br>
 <div class="center">
-    <button id="filtrer">Start!</button>
+    <button type="submit" id="filtrer">Start!</button>
 </div>
+</form>
 
 </template>
