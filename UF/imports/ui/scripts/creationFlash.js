@@ -16,7 +16,7 @@ Template.uploadForm.helpers({
   },
   imageFile(){
     return Images.findOne({}, { sort: { _id: 0 } })
-  }
+  }//pour afficher l'image apres le telechargement pour voir l'apercu
 });
 
 Template.uploadForm.events({
