@@ -28,6 +28,7 @@ Template.formulaireFlash.helpers({
         
     }
 })
+
 // conserve dans le cache les informations insérées dans les inputs du formulaire
 Template.formulaireFlash.events({
     "submit .js-formulaire-flash"(event, instance){
