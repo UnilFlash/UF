@@ -1,9 +1,4 @@
-FlowRouter.route('/uploadForm',{
-    name:'creationFlash',
-    action(){
-        BlazeLayout.render('uploadForm')
-    }
-});
+//routes pour accéder aux differentes pages de l'appli
 
 FlowRouter.route('/',{
     name:'accueil',

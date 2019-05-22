@@ -2,25 +2,24 @@
         
     <div class="container">
             
-            {{>retour}}
+           
             
         {{#with currentUpload}}
+        <!--telechargement d'image-->
         Uploading <b>{{file.name}}</b>:
         <span id="progress">{{progress.get}}%</span>
     {{else}}
     <div class="custom-file">
         <input id="customFile" type="file" accept="image/*" capture="environment" />
-        
+        <!--on peut pas voir la possibilité de prendre une photo sur ordi mais normalement c est possible sur smartphone-->
     </div>
         
     {{/with}}
     <img class="img-fluid img-responsive center-block img-thumbnail mw-50 mh-50" src="{{imageFile.link}}" alt="img">
   
     </div> 
+
     
 </template>
 
 
-<template name="retour">
-    <button id="retour">Retour</button>
-</template>

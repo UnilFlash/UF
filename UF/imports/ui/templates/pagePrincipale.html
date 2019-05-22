@@ -2,9 +2,9 @@
 
 <template  name="pagePrincipale">
 
-    {{> deconnexion}}
+    
     {{>lienCreationFlash}}
-  
+    {{> deconnexion}}
 </template>
 
 <template name = "lienCreationFlash">
@@ -21,17 +21,21 @@
        </div>
    </div> 
    {{/each}}
-   <div class="align-bottom align-middle">
-   <button type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
+   <div class="center">
+       <button type="submit" id="flasher">
+           <img src="./images/flash.png " height="90" width="90">
+        </button>
+</div>
+<div>
+    <button class="bt btn-outline-secondary topleft" style="background-color: rgba(255, 213, 0, 0.76);top:50px;" id="preferences">Préferences</button>
 </div>
 </template>
 
 <template name="deconnexion">
-        <nav>
-            <div class="container ">
-                <button class="bt btn-outline-secondary js-logout" style="background-color: rgba(255, 213, 0, 0.76);top:50px;">Se déconnecter</button>      
-            </div>
-        </nav>
-    </template>
-
+    <nav>
+        <div class="container ">
+            <button class="bt btn-outline-secondary js-logout topright" style="background-color: rgba(255, 213, 0, 0.76);top:50px;">Se déconnecter</button>      
+        </div>
+    </nav>
+</template>
 
