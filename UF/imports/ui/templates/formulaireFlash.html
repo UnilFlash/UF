@@ -2,9 +2,9 @@
         <head>
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
             </head>
-            <div class="align-mt-auto text-center"><h1>Formulaire Flashiste</h1></div>
+            <div class="align-mt-auto text-center container"><h1>Formulaire Flashiste</h1></div>
 
-    <form class="js-formulaire-flash" required>
+    <form class="js-formulaire-flash container" required>
         
         <!--bouton choix activité-->
         <br><br>
@@ -47,9 +47,10 @@
         <br><br>
         <br><br>
         <!--bouton de type submit pour que lorsqu'on clique les champs du formulaires soient envoyés dans la BD-->
-        
-        <button  type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
-
+        {{>uploadForm}}
+           
+            <button  type="submit" id="flasher"><img src="./images/flash.png " height="90" width="90"></button>
+       
         <!--ajouter une carte maps interactive-->   
     </form>
 </template>

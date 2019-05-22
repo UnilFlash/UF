@@ -10,7 +10,7 @@ import '../templates/pagePrincipale.html'
 
 Template.lienCreationFlash.events({
     'click #flasher': function () {
-        window.location = 'http://localhost:3000/uploadForm'
+        window.location = 'http://localhost:3000/formulaire'
     },
     'click #preferences': function(){
         window.location = "http://localhost:3000/filtres"
@@ -29,6 +29,7 @@ Template.lienCreationFlash.helpers({
         let image = Flash.findOne({_id: flashId}, {fields: {idImage: 1}})
         let returnedImage = Images.findOne({_id: image.idImage})
         return returnedImage
+        //liaison de l'image à la base de données des flashs
     },
     description(){
         return this.infoSupp
