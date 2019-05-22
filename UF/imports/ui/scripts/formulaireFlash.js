@@ -29,17 +29,30 @@ Template.formulaireFlash.helpers({
     }
 })
 
+
+
+
+
+
+/*Template.formulaireFlash.events({
+    "onclick.musicVal= event.target.music.value"(event, instance){
+        event.preventDefault();
+
+        Flash.insert({
+            music: musicVal,});
+        
+        });*/
 // conserve dans le cache les informations insérées dans les inputs du formulaire
 Template.formulaireFlash.events({
     "submit .js-formulaire-flash"(event, instance){
         event.preventDefault();
 
-        const musicVal= event.target.music.value;
-        const gamesVal= event.target.games.value;
-        const drinkVal= event.target.drink.value;
-        const studyVal= event.target.study.value;
-        const sportVal= event.target.sport.value;
-        const walkVal= event.target.walk.value;
+        let musicVal= event.target.music.value;
+        let gamesVal= event.target.games.value;
+        let drinkVal= event.target.drink.value;
+        let studyVal= event.target.study.value;
+        let sportVal= event.target.sport.value;
+        let walkVal= event.target.walk.value;
         const activiteVal= event.target.activite.value;
         const dateVal= event.target.date.value;
         const heureVal= event.target.heure.value;
@@ -51,14 +64,51 @@ Template.formulaireFlash.events({
         
 
     
+        if(musicVal == "false"){
+            musicVal = false
+        }else{
+            musicVal = true
+        }
+
+        if(gamesVal == "false"){
+            gamesVal = false
+        }else{
+            gamesVal = true
+        }
+
+        if(drinkVal == "false"){
+            drinkVal = false
+        }else{
+            drinkVal = true
+        }
+
+        if(studyVal == "false"){
+            studyVal = false
+        }else{
+            studyVal = true
+        }
+
+        if(sportVal == "false"){
+            sportVal = false
+        }else{
+            sportVal = true
+        }
+
+        if(walkVal == "false"){
+            walkVal = false
+        }else{
+            walkVal = true
+        }
+
         //interaction avec base de données récupère les données entrées dans les input du formulaire pour l'insérer dans la base de données
+
         Flash.insert({
             music: musicVal,
             games: gamesVal,
             drink: drinkVal,
             study: studyVal,
-            sport: sportVal,
             walk: walkVal,
+            sport: sportVal,
             activite: activiteVal,
             date: dateVal,
             heure: heureVal,
@@ -75,26 +125,74 @@ Template.formulaireFlash.events({
     },
     'click #music': function(e){
         e.preventDefault();
-        document.getElementById("music").style.color="rgb(255,0,0,58%)"
+        let music = document.getElementById("music")
+        if(music.value == "false"){
+            music.style.color="rgb(255,0,0,58%)";
+            music.value = true;
+        }else{
+            music.value = "false";
+            music.style.color="black";
+        }
     },
     'click #drink': function(e){
         e.preventDefault();
-        document.getElementById("drink").style.color="rgb(255,0,0,58%)"    
+        let drink = document.getElementById("drink")
+        if(drink.value == "false"){
+            drink.style.color="rgb(255,0,0,58%)";
+            drink.value = true;
+        }else{
+            drink.value = "false";
+            drink.style.color="black";
+        }
     },
     'click #walk': function(e){
         e.preventDefault();
-        document.getElementById("walk").style.color="rgb(255,0,0,58%)"
+        let walk = document.getElementById("walk")
+        if(walk.value == "false"){
+            walk.style.color="rgb(255,0,0,58%)";
+            walk.value = true;
+        }else{
+            walk.value = "false";
+            walk.style.color="black";
+        }
     },
     'click #study': function(e){
         e.preventDefault(); 
-        document.getElementById("study").style.color="rgb(255,0,0,58%)"
+        let study = document.getElementById("study")
+        if(study.value == "false"){
+            study.style.color="rgb(255,0,0,58%)";
+            study.value = true;
+        }else{
+            study.value = "false";
+            study.style.color="black";
+        }
     },
     'click #sport': function(e){
         e.preventDefault();
-        document.getElementById("sport").style.color="rgb(255,0,0,58%)"
+        let sport = document.getElementById("sport")
+        if(sport.value == "false"){
+            sport.style.color="rgb(255,0,0,58%)";
+            sport.value = true;
+        }else{
+            sport.value = "false";
+            sport.style.color="black";
+        }
     },
     'click #games': function(e){
         e.preventDefault();
-        document.getElementById("games").style.color="rgb(255,0,0,58%)"
+        let games = document.getElementById("games")
+        if(games.value == "false"){
+            games.style.color="rgb(255,0,0,58%)";
+            games.value = true;
+        }else{
+            games.value = "false";
+            games.style.color="black";
+        }
     },
+
+    
+
+
+
 });
+
