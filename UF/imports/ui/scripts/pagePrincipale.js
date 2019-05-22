@@ -10,7 +10,7 @@ import '../templates/pagePrincipale.html'
 
 Template.lienCreationFlash.events({
     'click #flasher': function () {
-        window.location = 'http://localhost:3000/uploadForm'
+        window.location = 'http://localhost:3000/formulaire'
     },
     'click #preferences': function(){
         window.location = "http://localhost:3000/filtres"
