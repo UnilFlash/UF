@@ -17,6 +17,26 @@ Template.lienCreationFlash.events({
     }
 });
 
+
+
+Template.lienCreationFlash.events({ 
+    
+    'click .participe': function(){
+        let join = document.getElementById("join");
+        if(join.value == "non"){
+            document.getElementById("carte").style.backgroundColor="lightgreen";
+            join.value = "oui";
+            $("#join").text("Annule");
+            document.getElementById("join").style.backgroundColor="rgb(249,88,88)";
+        }else if (join.value == "oui"){
+            join.value = "non";
+            document.getElementById("carte").style.backgroundColor="rgb(255,213,0,80%)";
+            $("#join").text("Je participe!");
+            document.getElementById("join").style.backgroundColor="lightgreen";
+            
+        }
+}});
+
 Template.lienCreationFlash.helpers({
     currentUpload() {
       return Template.instance().currentUpload.get();
@@ -33,6 +53,24 @@ Template.lienCreationFlash.helpers({
     },
     description(){
         return this.activite
+    },
+    date(){
+        return this.date
+    },
+    heure(){
+        return this.heure
+    },
+    nombre(){
+        return this.nbrPers
+    },
+    case(){
+        return this.case
+    },
+    infoSupp(){
+        return this.infoSupp
+    },
+    lieu(){
+        return this.lieu
     }
   });
 
@@ -40,7 +78,7 @@ Template.lienCreationFlash.helpers({
 	'click .js-logout'(event, instance){
         if(Meteor.userId()){
 		FlowRouter.go('/');}
-	}
+        }
 });
 
   

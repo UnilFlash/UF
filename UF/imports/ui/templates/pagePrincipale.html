@@ -1,8 +1,8 @@
 
 
 <template  name="pagePrincipale">
-
-    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
     {{>lienCreationFlash}}
     {{> deconnexion}}
 </template>
@@ -14,13 +14,30 @@
         <h4>{{project.title}}</h4>
    </div> 
    {{#each flash}}
-   <div class="card container">
-       <img class=" img-thumbnail img-responsive card-img-top center-block mw-50 align-middle card-img" src="{{image.link}}" alt="img" >
-       <div class="card-body">
-           <p id="description" class="card-text">{{description}}</p>
-       </div>
-   </div> 
-   {{/each}}
+   <div class="card w-25 p-3 rounded mx-auto d-block" id="carte" style="width: 18rem;">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="w-100 p-1" src="{{image.link}}">
+        </div>
+        <div class="card-content">
+          <h2 class="grey-text text-darken-4">{{description}}</h2>
+          <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                        Nombre de personnes idéales: {{nombre}} <br>
+                        {{case}}
+                        {{infoSupp}} <br>
+            
+                </div>
+              </div><br>
+          <h5> Date: {{date}}<br>Heure: {{heure}}</h5>
+          <a class="btn btn-primary float-right" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">+</a>
+          <br><br>
+          <p><button id="join" value = "non" class ="participe btn btn-default btn-lg btn-block" >Je participe!</button></p>
+        </div>
+      </div><br><br>
+      {{/each}}
+    
+                
+    
    <div class="container text-center align-mt-auto">
        <button type="submit" id="flasher">
            <img src="./images/flash.png " height="90" width="90">
