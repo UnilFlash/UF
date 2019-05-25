@@ -44,7 +44,6 @@ Template.formulaireFlash.events({
         const dateVal= event.target.date.value;
         const heureVal= event.target.heure.value;
         const nbrPersVal= event.target.nbrPers.value;
-        const caseVal= event.target.case.checked;
         const infoSuppVal= event.target.infoSupp.value;
         const lieuVal= event.target.lieu.value;
 
@@ -100,7 +99,6 @@ Template.formulaireFlash.events({
             date: dateVal,
             heure: heureVal,
             nbrPers: nbrPersVal,
-            case: caseVal,
             infoSupp: infoSuppVal,
             lieu: lieuVal,
             createdAt: new Date(),
