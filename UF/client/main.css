@@ -8,12 +8,13 @@ body {
 }
 
 .gallery{
-  margin: 10px;
-  float: left;
-  width: 180px;
+  width: 240px;
   background-color:rgb(255,213,0,90%);
-  border-radius: 180px;
-  height:180px;
+  border-radius: 240px;
+  height:240px;
+  margin: 10px;
+  margin-inline-start: 105px;
+  padding: 0 6px;
 }
 
 .desc {
@@ -22,48 +23,46 @@ body {
 }
 
 #drinkicone{
-  font-size: 80px;
-  padding-left: 62.5px;
-  padding-top: 20px;
+  font-size: 120px;
+  padding-left: 74px;
+  padding-top: 30px;
 }
 
 #musicicone{
-  font-size: 80px;
+  font-size: 120px;
   padding-left: 55px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 #gamesicone{
-  font-size: 80px;
+  font-size: 120px;
   padding-left: 55px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 #studyicone{
-  font-size: 80px;
+  font-size: 120px;
   padding-left: 47px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 #sporticone{
-  font-size: 80px;
-  padding-left: 50px;
-  padding-top: 20px;
+  font-size: 120px;
+  padding-left: 55px;
+  padding-top: 30px;
 }
 
 #walkicone{
-  font-size: 80px;
-  padding-left: 55px;
-  padding-top: 20px;
+  font-size: 120px;
+  padding-left: 60px;
+  padding-top: 30px;
 }
 
 #filtrer{
-  width: 60px;
+  width: 80px;
   background-color: rgb(255,213,0,90%);
-  border-radius: 60px;
-  height:50px;
-  top:500px;
-  margin-left:300px;
+  border-radius: 80px;
+  height:80px;
 }
 
 #flasher{

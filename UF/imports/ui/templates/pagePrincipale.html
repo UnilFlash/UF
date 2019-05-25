@@ -14,18 +14,19 @@
         <h4>{{project.title}}</h4>
    </div> 
    {{#each flash}}
-   <div class="card w-25 p-3 rounded mx-auto d-block" id="carte" style="width: 18rem;">
+   <div class="card w-25 p-3 rounded mx-auto d-block" id="carte">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="w-100 p-1" src="{{image.link}}">
         </div>
         <div class="card-content">
           <h2 class="grey-text text-darken-4">{{description}}</h2>
           <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                        Nombre de personnes idéales: {{nombre}} <br>
+                <div class="card card-body info" id="info">
+                        Nombre de personnes: {{nombre}} <br>
                         {{case}}
-                        {{infoSupp}} <br>
-            
+                        Lieu: {{lieu}}<br>
+                        ({{infoSupp}})<br>
+                        
                 </div>
               </div><br>
           <h5> Date: {{date}}<br>Heure: {{heure}}</h5>
@@ -43,15 +44,17 @@
            <img src="./images/flash.png " height="90" width="90">
         </button>
 </div>
-<div>
-    <button class="bt btn-outline-secondary topleft" style="background-color: rgba(255, 213, 0, 0.76);top:50px;" id="preferences">Préferences</button>
-</div>
+<nav>
+    <div class="container">
+        <button class="bt btn-outline-secondary topleft rounded" style="background-color: rgba(255, 213, 0, 0.76);top:50px;" id="preferences">Préferences</button>
+    </div>
+</nav>
 </template>
 
 <template name="deconnexion">
     <nav>
         <div class="container">
-            <button class="bt btn-outline-secondary js-logout topright" style="background-color: rgba(255, 213, 0, 0.76);top:50px;">Se déconnecter</button>      
+            <button class="bt btn-outline-secondary js-logout topright rounded d-block" style="background-color: rgba(255, 213, 0, 0.76);top:50px;">Se déconnecter</button>      
         </div>
     </nav>
 </template>

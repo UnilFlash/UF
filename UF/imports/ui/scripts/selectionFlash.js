@@ -158,7 +158,5 @@ import { Filtres } from '../../api/filtres.js';
         }
     },
        'click #filtrer': function(){
-           window.location ="http://localhost:3000/main"
-           
-       }
-    })
+        FlowRouter.go('/main');}
+    })  

@@ -10,12 +10,12 @@ import '../templates/pagePrincipale.html'
 
 Template.lienCreationFlash.events({ 
     'click #flasher': function () {
-        window.location = 'http://localhost:3000/formulaire'
+        FlowRouter.go('formulaire')
     },
     'click #preferences': function(){
-        window.location = "http://localhost:3000/filtres"
-    }
-});
+        FlowRouter.go('/filtres');}
+        }
+);
 
 
 
@@ -28,11 +28,13 @@ Template.lienCreationFlash.events({
             join.value = "oui";
             $("#join").text("Annule");
             document.getElementById("join").style.backgroundColor="rgb(249,88,88)";
+            document.getElementById("info").style.backgroundColor="rgb(77, 255, 77)";
         }else if (join.value == "oui"){
             join.value = "non";
             document.getElementById("carte").style.backgroundColor="rgb(255,213,0,80%)";
             $("#join").text("Je participe!");
             document.getElementById("join").style.backgroundColor="lightgreen";
+            document.getElementById("info").style.backgroundColor="rgb(255,213,0,80%)";
             
         }
 }});
