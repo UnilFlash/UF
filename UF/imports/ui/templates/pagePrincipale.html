@@ -19,17 +19,17 @@
           <img class="w-100 p-1" src="{{image.link}}">
         </div>
         <div class="card-content">
-          <h2 class="grey-text text-darken-4">{{description}}</h2>
+          <h2 class="grey-text text-darken-4 text-center"><strong><em>{{description}}</em></strong></h2>
           <div class="collapse" id="collapseExample">
-                <div class="card card-body info" id="info">
-                        Nombre de personnes: {{nombre}} <br>
+                <div class="card info" id="info">
+                        J'aimerai *{{nombre}}* personnes<br><br>
                         {{case}}
-                        Lieu: {{lieu}}<br>
-                        ({{infoSupp}})<br>
+                        Infos pratiques: <em>{{infoSupp}}</em><br>
+                        <em>@ {{lieu}}</em>
                         
                 </div>
               </div><br>
-          <h5> Date: {{date}}<br>Heure: {{heure}}</h5>
+          <h5> Date: <u>{{date}}</u><br><br>Heure: <u>{{heure}}</u></h5>
           <a class="btn btn-primary float-right" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">+</a>
           <br><br>
           <p><button id="join" value = "non" class ="participe btn btn-default btn-lg btn-block" >Je participe!</button></p>

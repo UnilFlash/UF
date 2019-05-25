@@ -8,36 +8,6 @@ import '../templates/pagePrincipale.html';
 
 import '../templates/pagePrincipale.html'
 
-Template.lienCreationFlash.events({ 
-    'click #flasher': function () {
-        FlowRouter.go('formulaire')
-    },
-    'click #preferences': function(){
-        FlowRouter.go('/filtres');}
-        }
-);
-
-
-
-Template.lienCreationFlash.events({ 
-    
-    'click .participe': function(){
-        let join = document.getElementById("join");
-        if(join.value == "non"){
-            document.getElementById("carte").style.backgroundColor="lightgreen";
-            join.value = "oui";
-            $("#join").text("Annule");
-            document.getElementById("join").style.backgroundColor="rgb(249,88,88)";
-            document.getElementById("info").style.backgroundColor="rgb(77, 255, 77)";
-        }else if (join.value == "oui"){
-            join.value = "non";
-            document.getElementById("carte").style.backgroundColor="rgb(255,213,0,80%)";
-            $("#join").text("Je participe!");
-            document.getElementById("join").style.backgroundColor="lightgreen";
-            document.getElementById("info").style.backgroundColor="rgb(255,213,0,80%)";
-            
-        }
-}});
 
 Template.lienCreationFlash.helpers({
     currentUpload() {
@@ -83,4 +53,36 @@ Template.lienCreationFlash.helpers({
         }
 });
 
-  
+Template.lienCreationFlash.events({ 
+    'click #flasher': function () {
+        FlowRouter.go('formulaire')
+    },
+    'click #preferences': function(){
+        FlowRouter.go('/filtres');}
+        }
+);
+
+
+
+Template.lienCreationFlash.events({ 
+    
+    'click .participe': function(){
+        let join = document.getElementById("join");
+        let a = this.nbrPers;
+        if(join.value == "non"){
+            document.getElementById("carte").style.backgroundColor="lightgreen";
+            join.value = "oui";
+            $("#join").text("Annule");
+            document.getElementById("join").style.backgroundColor="rgb(249,88,88)";
+            document.getElementById("info").style.backgroundColor="rgb(77, 255, 77)";
+            --a;
+        }else if (join.value == "oui"){
+            join.value = "non";
+            document.getElementById("carte").style.backgroundColor="rgb(255,213,0,80%)";
+            $("#join").text("Je participe!");
+            document.getElementById("join").style.backgroundColor="lightgreen";
+            document.getElementById("info").style.backgroundColor="rgb(255,213,0,80%)";
+            ++a;
+            
+        }
+}});

@@ -114,7 +114,7 @@ Template.formulaireFlash.events({
         e.preventDefault();
         let music = document.getElementById("music")
         if(music.value == "false"){
-            music.style.color="rgb(255,0,0,58%)";
+            music.style.color="lightgreen";
             music.value = true;
         }else{
             music.value = "false";
@@ -125,7 +125,7 @@ Template.formulaireFlash.events({
         e.preventDefault();
         let drink = document.getElementById("drink")
         if(drink.value == "false"){
-            drink.style.color="rgb(255,0,0,58%)";
+            drink.style.color="lightgreen";
             drink.value = true;
         }else{
             drink.value = "false";
@@ -136,7 +136,7 @@ Template.formulaireFlash.events({
         e.preventDefault();
         let walk = document.getElementById("walk")
         if(walk.value == "false"){
-            walk.style.color="rgb(255,0,0,58%)";
+            walk.style.color="lightgreen";
             walk.value = true;
         }else{
             walk.value = "false";
@@ -147,7 +147,7 @@ Template.formulaireFlash.events({
         e.preventDefault(); 
         let study = document.getElementById("study")
         if(study.value == "false"){
-            study.style.color="rgb(255,0,0,58%)";
+            study.style.color="lightgreen";
             study.value = true;
         }else{
             study.value = "false";
@@ -158,7 +158,7 @@ Template.formulaireFlash.events({
         e.preventDefault();
         let sport = document.getElementById("sport")
         if(sport.value == "false"){
-            sport.style.color="rgb(255,0,0,58%)";
+            sport.style.color="lightgreen";
             sport.value = true;
         }else{
             sport.value = "false";
@@ -169,7 +169,7 @@ Template.formulaireFlash.events({
         e.preventDefault();
         let games = document.getElementById("games")
         if(games.value == "false"){
-            games.style.color="rgb(255,0,0,58%)";
+            games.style.color="lightgreen";
             games.value = true;
         }else{
             games.value = "false";

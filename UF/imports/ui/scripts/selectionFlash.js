@@ -99,7 +99,7 @@ import { Filtres } from '../../api/filtres.js';
                 games.value = true;
             }else{
                 games.value = "false";
-                games.style.color="rgb(255,0,0,58%)";
+                games.style.color="lightgreen";
             }
         },
        'click #drink': function(e){
@@ -110,7 +110,7 @@ import { Filtres } from '../../api/filtres.js';
                drink.value = true
             }else{
                 drink.value = "false";
-                drink.style.color="rgb(255,0,0,58%)";
+                drink.style.color="lightgreen";
         }
     },
        'click #music': function(e){
@@ -121,7 +121,7 @@ import { Filtres } from '../../api/filtres.js';
             music.value = true;
         }else{
             music.value = "false";
-            music.style.color="rgb(255,0,0,58%)";
+            music.style.color="lightgreen";
         }
     },
        'click #sport': function(e){
@@ -132,7 +132,7 @@ import { Filtres } from '../../api/filtres.js';
             sport.value = true;
         }else{
             sport.value = "false";
-            sport.style.color="rgb(255,0,0,58%)";
+            sport.style.color="lightgreen";
         }
     },
        'click #walk': function(e){
@@ -143,7 +143,7 @@ import { Filtres } from '../../api/filtres.js';
             walk.value = true;
         }else{
             walk.value = "false";
-            walk.style.color="rgb(255,0,0,58%)";
+            walk.style.color="lightgreen";
         }
     },
        'click #study': function(e){
@@ -154,7 +154,7 @@ import { Filtres } from '../../api/filtres.js';
             study.value = true;
         }else{
             study.value = "false";
-            study.style.color="rgb(255,0,0,58%)";
+            study.style.color="lightgreen";
         }
     },
        'click #filtrer': function(){
