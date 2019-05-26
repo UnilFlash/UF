@@ -184,3 +184,8 @@ background-color: #EDF3F6;
 .participe{
   background-color: lightgreen;
 }
+
+.complet{
+  color: red;
+  font-size: 50px;
+}
