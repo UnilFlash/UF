@@ -1,6 +1,7 @@
 import { FlowRouter } from 'meteor/ostrio:flow-router-extra';
 import { Template }   from 'meteor/templating';
 import '../templates/pageAccueil.html'
+import { Filtres } from '../../api/filtres';
 
 
 Template.navbar.events({
@@ -19,6 +20,8 @@ Template.login_modal.onCreated(function(){
 		}
 	});
 });
+
+
 
 
 T9n.setLanguage('fr');

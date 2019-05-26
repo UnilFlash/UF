@@ -175,9 +175,11 @@ Template.formulaireFlash.events({
         }
     },
 
-    
-
-
 
 });
 
+Template.formulaireFlash.events({ 
+    'click #retour': function(){
+        FlowRouter.go('/main');}
+        }
+);
