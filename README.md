@@ -26,8 +26,8 @@ Voilà vous êtes sur notre application !
 
 
 ## Interface
-
-![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Cre%CC%81er%20un%20compte%20.png)
+*l'utilsateur créer un compte avec un email et un mot de passe
+![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Cre%CC%81er%20un%20compte%20.png "création compte")
 
 (images + petites descriptions) 
 
