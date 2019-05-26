@@ -38,7 +38,7 @@ Voilà vous êtes sur notre application !
 *Une fois connecté, l'utilisateur est redirigé vers la page principale où tous les flashs disponibles s'affichent. De plus, il *peut changer ses préférences (types d'activités) et se déconnecter.
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Page%20principale%20.png "page principale")
 
-*Chaque flash est illustré d'une image et affiche lorsqu'on clique sur le petit plus les informations importantes (lieu, heure, *activité, nombre de participants désirés, information supplémentaires). Lutilisateur intéressé par le flash peut cliquer sur le bouton je participe et peut donc participer à l'événement.
+*Chaque flash est illustré d'une image et affiche lorsqu'on clique sur le petit plus les informations importantes (lieu, heure, *activité, nombre de participants désirés, information supplémentaires). L'utilisateur intéressé par le flash peut cliquer sur *le bouton je participe et peut donc participer à l'événement.Lorsque l'utilisateur à cliquer sur je participe le flash change *de couleur et devient vert, si le flash est complet il devient rouge. L'utilisateur peut annuler sa participation au flash dans *ce cas il clique sur le bouton Annule.
 
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Pr%C3%A9cisions%20du%20Flash.png "page principale-détail flash")
 
@@ -46,7 +46,7 @@ Voilà vous êtes sur notre application !
 
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Page%20principale%20%2B%20bouton.png "page principale 2")
 
-*L'utilisateur qui veut créer un flash rempli les informations relative à l'événement qu'il veut partager
+*L'utilisateur qui veut créer un flash rempli les informations relative à l'événement qu'il veut partager (type d'activité, *titre de l'activité, date, heure, lieu, informations supplémentaires s'il y en a). L'utilisateur ne peut pas créer de flash *plus de 48h avant que celui-ci a lieu.
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Formulaire%20.png "formulaire création flash")
 
 *Après avoir rempli le formulaire l'utilisateur peut insérer un image pour illustrer son flash
