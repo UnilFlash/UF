@@ -14,7 +14,7 @@ Template.formulaireFlash.helpers({
         let annee = date.getFullYear();
         let mois = date.getMonth()+1;
         let jour = date.getDate();
-        // console.log(`${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`)
+        
         return `${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`
     },
     //limitation pour l'input date au jour même + 48h
@@ -23,13 +23,13 @@ Template.formulaireFlash.helpers({
         let annee = date.getFullYear();
         let mois = date.getMonth()+1;
         let jour = date.getDate()+2;
-        // console.log(`${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`)
+        
         return `${annee}-${mois.toString().length < 2 ? `0${mois}` : mois}-${jour.toString().length < 2 ? `0${jour}` : jour}`
         
     }
 })
 
-// conserve dans le cache les informations insérées dans les inputs du formulaire
+// conserve dans le cache les informations insérées dans les inputs du formulaire lorsqu'on clique sur bouton(submit)
 Template.formulaireFlash.events({
     "submit .js-formulaire-flash"(event, instance){
         event.preventDefault();
@@ -48,7 +48,7 @@ Template.formulaireFlash.events({
         const lieuVal= event.target.lieu.value;
 
         
-
+//récupère dans la base de données le type(s) d'activité(s) sélectionné(s)
     
         if(musicVal == "false"){
             musicVal = false
@@ -86,7 +86,7 @@ Template.formulaireFlash.events({
             walkVal = true
         }
 
-        //interaction avec base de données récupère les données entrées dans les input du formulaire pour l'insérer dans la base de données
+        //interaction avec base de données récupère les données entrées dans les inputs du formulaire pour les conserver dans la base de données
 
         Flash.insert({
             music: musicVal,
