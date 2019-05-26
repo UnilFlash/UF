@@ -29,7 +29,7 @@ Voilà vous êtes sur notre application !
 
 (images + petites descriptions) 
 
-(https://github.com/LaraL99/UnilFlash/master/UF/Images interfaces/Page Accueil 1.png/"Page d'accueil")
+(https://github.com/LaraL99/UniFlash/raw/master/UF/Images interfaces/Page Accueil 1.PNG "Comparaison utilisateur-groupe")
 
 
 
