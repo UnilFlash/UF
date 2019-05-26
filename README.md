@@ -35,6 +35,9 @@ Voilà vous êtes sur notre application !
 *l'utilisateur créer un compte avec un email et un mot de passe
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Cre%CC%81er%20un%20compte%20.png "création compte")
 
+*Une fois connecté, l'utilisateur est redirigé vers la page principale où tous les flashs disponibles s'affichent. De plus, il *peut changer ses préférences (types d'activités) et se déconnecter.
+![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Page%20principale%20.png "page principale)
+
 *L'utilisateur qui veut créer un flash rempli les informations relative à l'événement qu'il veut partager
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Formulaire%20.png "formulaire création flash")
 
