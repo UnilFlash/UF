@@ -189,3 +189,9 @@ background-color: #EDF3F6;
   color: red;
   font-size: 50px;
 }
+
+h3{
+  font-family: Arial, Helvetica, sans-serif, italic;
+  color: rgb(255,213,0,90%);
+  text-shadow: #4287e2 1px 1px, #4287e2 -1px 1px, #4287e2 -1px -1px, #4287e2 1px -1px;
+}
