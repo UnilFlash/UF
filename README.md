@@ -1,8 +1,8 @@
 # UniFlash !
 Il s'agit d'une application meteor développée par des étudiants de l'université de Lausanne dans le cadre du cours Programmation pour Internet II - Meteor.js donné par Isaac Pante et Loris Rimaz. 
 
-Tu as un cours annulé et tu ne sais pas quoi faire!? Alors va sur Uniflash et trouve un flash qui te corresponds! L'application consiste à créer des Flashs/événement essentiellement au sein d'une communauté universitaire, afin de faire rencontrer des gens et développer en eux une certaine spontanéité. 
-Tout d'abord nous avons une page de login avec un signup et un login par mot de passe. Une fois enregistré l'utilisateur préséléctionne des filtres pour avoir les types de Flashs qui l'intéresseraient sur la page principale. Après sa sélection, il se retrouve sur la page principale où l'on retrouve les Flashs des autres utilisateurs et un bouton jaune avec un éclair en bas de la page pour créer son propre Flash. Ce bouton l'amène sur une page de formulaire où il doit entrer diverses informations concernant son Flash ainsi qu'un upload de
+Tu as un cours annulé et tu ne sais pas quoi faire!? Alors rends-toi sur Uniflash et trouve un flash qui te corresponds! L'application consiste à créer des Flashs/événement essentiellement au sein d'une communauté universitaire, afin de faire rencontrer des gens et développer en eux une certaine spontanéité. 
+Tout d'abord nous avons une page de login avec un signup et un login par mot de passe. Une fois enregistré l'utilisateur présélectionne des filtres pour avoir les types de Flashs qui l'intéresseraient. Après sa sélection, il se retrouve sur la page principale où l'on retrouve les Flashs des autres utilisateurs et un bouton jaune avec un éclair en bas de la page pour créer son propre Flash. Ce bouton l'amène sur une page de formulaire où il doit entrer diverses informations concernant son Flash ainsi qu'un upload de
 photo.
 
 ## Langages utilisés
@@ -46,7 +46,7 @@ FlowRouter (les liens/les routes)
 Bootstrap (style)
 
 ## Glossaire
-* Flash : Evènement
+* Flash : Événement
 
 ## Contributeurs
 * Lara
