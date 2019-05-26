@@ -63,26 +63,34 @@ Template.lienCreationFlash.events({
 );
 
 
-
-Template.lienCreationFlash.events({ 
+Template.lienCreationFlash.events({
     
+    'mouseover #carte' : function(){
+    if(this.nbrPers==0){
+        document.getElementById("status").style.opacity="0.5";
+        document.getElementById("carte").style.opacity="0.5";
+        document.getElementById("carte").style.backgroundColor="red";
+        document.getElementById("info").style.backgroundColor="red";
+        $("#join").text("COMPLET")
+    }
+},
+
     'click .participe': function(){
         let join = document.getElementById("join");
-        let a = this.nbrPers;
-        if(join.value == "non"){
+        if(join.value == "non" && this.nbrPers>0){
             document.getElementById("carte").style.backgroundColor="lightgreen";
             join.value = "oui";
             $("#join").text("Annule");
             document.getElementById("join").style.backgroundColor="rgb(249,88,88)";
             document.getElementById("info").style.backgroundColor="rgb(77, 255, 77)";
-            --a;
-        }else if (join.value == "oui"){
+            Flash.update(this._id,{ $set : {nbrPers : this.nbrPers-1}});
+        }else if (join.value == "oui" && this.nbrPers>=0){
             join.value = "non";
             document.getElementById("carte").style.backgroundColor="rgb(255,213,0,80%)";
             $("#join").text("Je participe!");
             document.getElementById("join").style.backgroundColor="lightgreen";
             document.getElementById("info").style.backgroundColor="rgb(255,213,0,80%)";
-            ++a;
-            
-        }
-}});
+            Flash.update(this._id,{ $set : {nbrPers : this.nbrPers+1}});
+    }
+}
+})
