@@ -26,8 +26,10 @@ Voilà vous êtes sur notre application !
 
 
 ## Interface
-*Bienvenue sur la page accueil d'Uniflash, l'utilisateur est invité à cliquer sur le bouton pour entrer dans le monde de l'application
+*Bienvenue sur la page accueil d'Uniflash, l'utilisateur est invité à cliquer sur le bouton pour entrer dans le monde de *l'application
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Page%20Accueil%201%20.png "page accueil")
+*L'utilisateur qui a déjà un compte peut se connecter avec son email et son mot de passe ceux qui n'ont pas encore de compte son *invités à s'enregitrer
+![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Login.png "connexion")
 *l'utilisateur créer un compte avec un email et un mot de passe
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Cre%CC%81er%20un%20compte%20.png "création compte")
 
