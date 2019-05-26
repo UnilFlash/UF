@@ -1,10 +1,7 @@
 # UniFlash !
-C'est une application meteor développée par des étudiants en cours de programmation pour internet II à l'université de Lausanne. 
-L'application consiste à créer des flashs pour ainsi regrouper des gens. 
-Tout d'abord on a une page de login avec un signup et un login par mot de passe. Une fois enregistré, on préséléctionne des filtres 
-pour avoir les flashs qui nous interessent sur la page principale. Ensuite, on se trouve sur la page principale où l'on retrouve 
-justement les flashs des autres utilisateurs et un bouton jaune avec un eclair en bas de la page pour créer son propre flash. Ce
-bouton nous amène donc sur une page de formulaire où l'on entre diverses informations concernant notre flash ainsi qu'un upload de
+Il s'agit d'une application meteor développée par des étudiants en cours de programmation pour internet II à l'université de Lausanne. 
+L'application consiste à créer des Flashs, qui peuvent être assimilés à des évènements, afin de faire rencontrer des gens et développer une certaine spontanéité. 
+Tout d'abord nous avons une page de login avec un signup et un login par mot de passe. Une fois enregistré l'utilisateur préséléctionne des filtres pour avoir les types de Flashs qui l'intéresseraient sur la page principale. Après sa sélection, il se retrouve sur la page principale où l'on retrouve les Flashs des autres utilisateurs et un bouton jaune avec un éclair en bas de la page pour créer son propre Flash. Ce bouton l'amène sur une page de formulaire où il doit entrer diverses informations concernant son Flash ainsi qu'un upload de
 photo.
 
 ## Langages utilisés
@@ -13,17 +10,18 @@ photo.
 * Javascript 
 * Meteor avec Blaze
 * MongoDB et FileCollections
+* FlowRouter
 
 ## Lancement
 Il faut avoir meteor installé : lien pour l'installation :  https://www.meteor.com/install
 
-Une fois installée, allez dans le terminal et dirigez vous (avec des cd) dans le fichier UF et lancez la commande :
+Une fois installé, allez dans le terminal et dirigez-vous (avec des cd) dans le fichier UF et lancez la commande :
 ```
 meteor run
 ```
-L'application se construit et s'affiche sur localhost:3000, rendez vous y à l'aide de votre navigateur dans la barre de recherche.
+L'application se construit et s'affiche sur localhost:3000, rendez-vous y à l'aide de votre navigateur dans la barre de recherche.
 
-Voila vous êtes sur notre application !
+Voilà vous êtes sur notre application !
 ## Glossaire
 * Flash : Evènement
 
