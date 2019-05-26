@@ -30,7 +30,6 @@ Voilà vous êtes sur notre application !
 (images + petites descriptions) 
 
 
-
 ## Bases de données 
 
 L'application contient 4 collections MongoDB. La première est gérée par accounts-password et useraccounts:bootstrap et gère les comptes utilisateurs. Les 3 autres, Filtres, Flash et Images, gèrent respectivement l'enregistrement des choix/filtrages de types de Flashs, la création du formulaire et de la photo du Flash. 
