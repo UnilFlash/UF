@@ -27,7 +27,7 @@ Voilà vous êtes sur notre application !
 
 ## Interface
 
-https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Cre%CC%81er%20un%20compte%20.png
+![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Cre%CC%81er%20un%20compte%20.png)
 
 (images + petites descriptions) 
 
