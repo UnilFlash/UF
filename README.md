@@ -29,9 +29,6 @@ Voilà vous êtes sur notre application !
 
 (images + petites descriptions) 
 
-(ImagesInterfaces/PageAccueil1.PNG)
-
-
 
 ## Bases de données 
 
