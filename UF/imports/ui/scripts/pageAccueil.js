@@ -15,9 +15,11 @@ Template.login_modal.onCreated(function(){
 	this.autorun(()=>{
 		if(Meteor.userId()){
 			const titre = document.querySelector("h3").innerHTML;
-			if(titre == "Se connecter") FlowRouter.go("/main");
-			else FlowRouter.go("/filtres");
-		}
+			if(Meteor.userId() && titre == "Se connecter"){
+				FlowRouter.go("/main");
+		}else{
+			FlowRouter.go("/filtres");
+		}}
 	});
 });
 

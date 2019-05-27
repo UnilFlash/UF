@@ -4,7 +4,7 @@ FlowRouter.route('/',{
     name:'accueil',
     action(){
         if(Meteor.userId()){
-        FlowRouter.go("/filtres");
+        FlowRouter.go("/main");
     }else{
         BlazeLayout.render('pageAccueil');
     }
@@ -23,8 +23,6 @@ FlowRouter.route('/filtres',{
     action(){
         if(Meteor.userId()){
             BlazeLayout.render('selectionFlash')
-        }else{
-            FlowRouter.go("/");
         }
     }
 });

@@ -51,7 +51,7 @@ Template.lienCreationFlash.helpers({
 	'click .js-logout':function(){
         const titre2 = document.querySelector("#dec").innerHTML;
         if(titre2 == "Se déconnecter" && Filtres.find({ _id:{ $exists:true}})){
-            FlowRouter.go('/')};          
+            FlowRouter.go('/')};
     
 }});
 
@@ -68,7 +68,8 @@ Template.lienCreationFlash.events({
 Template.lienCreationFlash.events({
     
     'mouseover #carte' : function(){
-    if(this.nbrPers==0){
+        let join = document.getElementById("join");
+        if(this.nbrPers==0 && join.value == "non"){
         document.getElementById("status").style.opacity="0.5";
         document.getElementById("carte").style.opacity="0.5";
         document.getElementById("carte").style.backgroundColor="red";
@@ -76,8 +77,7 @@ Template.lienCreationFlash.events({
         $("#join").text("COMPLET")
     }
 },
-
-    'click .participe': function(){
+    'click .participe': function(e){
         let join = document.getElementById("join");
         if(join.value == "non" && this.nbrPers>0){
             document.getElementById("carte").style.backgroundColor="lightgreen";
