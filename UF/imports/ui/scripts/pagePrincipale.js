@@ -49,11 +49,10 @@ Template.lienCreationFlash.helpers({
 
  Template.deconnexion.events({
 	'click .js-logout':function(){
-        const titre2 = document.querySelector("#dec").innerHTML;
-        if(titre2 == "Se déconnecter" && Filtres.find({ _id:{ $exists:true}})){
-            FlowRouter.go('/')};
+        Meteor.logout();
+        FlowRouter.go('/')}
     
-}});
+});
 
 Template.lienCreationFlash.events({ 
     'click #flasher': function () {
