@@ -38,6 +38,10 @@ Voilà vous êtes sur notre application !
 
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Cre%CC%81er%20un%20compte%20.png "création compte")
 
+*Lors de la première connexion, l'utilisateur est invité à sélectionner le type d'activités qui l'intéressent. lorsqu'il se *connectera par la suite cette étape n'aura plus lieu, cependant il peut à tout moment changer ses préférences en cliquant sur *le bouton préférences sur la page principale.
+
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Filtres.png "page filtre")
+
 *Une fois connecté, l'utilisateur est redirigé vers la page principale où tous les flashs disponibles s'affichent. De plus, il *peut changer ses préférences (types d'activités) et se déconnecter.
 
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Page%20principale%20.png "page principale")
