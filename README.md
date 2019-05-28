@@ -61,7 +61,7 @@ Voilà vous êtes sur notre application !
 
 *Après avoir rempli le formulaire l'utilisateur peut insérer un image pour illustrer son flash
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/UploadPhoto.png "insertion image")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/UploadPhoto%20.png "insertion image")
 
 
 ## Bases de données 
