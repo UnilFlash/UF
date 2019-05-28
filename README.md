@@ -44,7 +44,7 @@ Voilà vous êtes sur notre application !
 
 *Une fois connecté, l'utilisateur est redirigé vers la page principale où tous les flashs disponibles s'affichent. De plus, il *peut changer ses préférences (types d'activités) et se déconnecter.
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipale.png "page principale")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipale%20.png "page principale")
 
 *Chaque flash est illustré d'une image et affiche lorsqu'on clique sur le petit plus les informations importantes (lieu, heure, *activité, nombre de participants désirés, information supplémentaires). L'utilisateur intéressé par le flash peut cliquer sur *le bouton je participe et peut donc participer à l'événement.Lorsque l'utilisateur a cliqué sur je participe le flash change *de couleur et devient vert, si le flash est complet il devient rouge. L'utilisateur peut annuler sa participation au flash dans *ce cas il clique sur le bouton Annule.
 
