@@ -28,15 +28,15 @@ Voilà vous êtes sur notre application !
 ## Interface
 *Bienvenue sur la page accueil d'Uniflash, l'utilisateur est invité à cliquer sur le bouton pour entrer dans le monde de *l'application
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Page%20Accueil%201%20.png "page accueil")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Page%20Accueil%201%20.png "page accueil")
 
 *L'utilisateur qui a déjà un compte peut se connecter avec son email et son mot de passe, ceux qui n'ont pas encore de compte son *invités à s'enregitrer
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Login.png "connexion")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Login.png "connexion")
 
 *l'utilisateur créer un compte avec un nom, un email et un mot de passe
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Cre%CC%81er%20un%20compte%20.png "création compte")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Cre%CC%81er%20un%20compte%20.png "création compte")
 
 *Lors de la première connexion, l'utilisateur est invité à sélectionner le type d'activités qui l'intéressent. lorsqu'il se *connectera par la suite cette étape n'aura plus lieu, cependant il peut à tout moment changer ses préférences en cliquant sur *le bouton préférences sur la page principale.
 
@@ -44,24 +44,24 @@ Voilà vous êtes sur notre application !
 
 *Une fois connecté, l'utilisateur est redirigé vers la page principale où tous les flashs disponibles s'affichent. De plus, il *peut changer ses préférences (types d'activités) et se déconnecter.
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Page%20principale%20.png "page principale")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Page%20principale%20.png "page principale")
 
 *Chaque flash est illustré d'une image et affiche lorsqu'on clique sur le petit plus les informations importantes (lieu, heure, *activité, nombre de participants désirés, information supplémentaires). L'utilisateur intéressé par le flash peut cliquer sur *le bouton je participe et peut donc participer à l'événement.Lorsque l'utilisateur a cliqué sur je participe le flash change *de couleur et devient vert, si le flash est complet il devient rouge. L'utilisateur peut annuler sa participation au flash dans *ce cas il clique sur le bouton Annule.
 
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Pr%C3%A9cisions%20du%20Flash.png "page principale-détail flash")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Pr%C3%A9cisions%20du%20Flash.png "page principale-détail flash")
 
 *Sur cette même page principale l'utilisateur trouvera un bouton(tu veux flasher?!) qui lui permet de créer un flash *(redirection vers formulaire)
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Page%20principale%20%2B%20bouton.png "page principale 2")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Page%20principale%20%2B%20bouton.png "page principale 2")
 
 *L'utilisateur qui veut créer un flash, rempli les informations relatives à l'événement qu'il veut partager (type d'activité, *titre de l'activité, date, heure, lieu, informations supplémentaires s'il y en a). L'utilisateur ne peut pas créer de flash *plus de 48h avant que celui-ci ait lieu.
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Formulaire%20.png "formulaire création flash")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Formulaire%20.png "formulaire création flash")
 
 *Après avoir rempli le formulaire l'utilisateur peut insérer un image pour illustrer son flash
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/Images%20interfaces/Upload%20photo%20.png "insertion image")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Upload%20photo%20.png "insertion image")
 
 
 ## Bases de données 
