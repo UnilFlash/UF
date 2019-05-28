@@ -57,7 +57,7 @@ Voilà vous êtes sur notre application !
 
 *L'utilisateur qui veut créer un flash, rempli les informations relatives à l'événement qu'il veut partager (type d'activité, *titre de l'activité, date, heure, lieu, informations supplémentaires s'il y en a). L'utilisateur ne peut pas créer de flash *plus de 48h avant que celui-ci ait lieu.
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Formulaire.png "formulaire création flash")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Formulaire%20.png "formulaire création flash")
 
 *Après avoir rempli le formulaire l'utilisateur peut insérer un image pour illustrer son flash
 
