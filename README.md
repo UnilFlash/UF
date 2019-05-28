@@ -36,7 +36,7 @@ Voilà vous êtes sur notre application !
 
 *l'utilisateur créer un compte avec un nom, un email et un mot de passe
 
-![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/CreerUnCompte.png "création compte")
+![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/CreerUnCompte%20.png "création compte")
 
 *Lors de la première connexion, l'utilisateur est invité à sélectionner le type d'activités qui l'intéressent. lorsqu'il se *connectera par la suite cette étape n'aura plus lieu, cependant il peut à tout moment changer ses préférences en cliquant sur *le bouton préférences sur la page principale.
 
