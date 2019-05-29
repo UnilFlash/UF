@@ -5,13 +5,6 @@ Tu as un cours annulé et tu ne sais pas quoi faire!? Alors rends-toi sur Unifla
 Tout d'abord nous avons une page de login avec un signup et un login par mot de passe. Une fois enregistré l'utilisateur présélectionne des filtres pour avoir les types de Flashs qui l'intéresseraient. Après sa sélection, il se retrouve sur la page principale où l'on retrouve les Flashs des autres utilisateurs et un bouton jaune avec un éclair en bas de la page pour créer son propre Flash. Ce bouton l'amène sur une page de formulaire où il doit entrer diverses informations concernant son Flash ainsi qu'un upload de
 photo.
 
-## Langages utilisés
-* HTML
-* CSS avec Bootstrap
-* Javascript 
-* Meteor avec Blaze
-* MongoDB et FileCollections
-
 
 ## Lancement
 Il faut avoir meteor installé : lien pour l'installation :  https://www.meteor.com/install
