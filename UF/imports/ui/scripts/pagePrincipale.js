@@ -81,7 +81,7 @@ Template.lienCreationFlash.events({
         if(join.value == "non" && this.nbrPers>0){
             document.getElementById("carte").style.backgroundColor="lightgreen";
             join.value = "oui";
-            $("#join").text("Annule");
+            $("#join").text("Annuler");
             document.getElementById("join").style.backgroundColor="rgb(249,88,88)";
             document.getElementById("info").style.backgroundColor="rgb(77, 255, 77)";
             Flash.update(this._id,{ $set : {nbrPers : this.nbrPers-1}});
