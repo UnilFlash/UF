@@ -34,7 +34,8 @@ L'utilisateur créer un compte avec un nom, un email et un mot de passe.
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/CreerUnCompte%20.png" alt="alt text" width="350" height="350">
 
 
-Lors de la première connexion, l'utilisateur est invité à sélectionner le type d'activités qui l'intéressent. lorsqu'il se connectera par la suite cette étape n'aura plus lieu, cependant il peut à tout moment changer ses préférences en cliquant sur le bouton préférences sur la page principale.
+Lors de la première connexion, l'utilisateur est invité à sélectionner le type d'activités qui l'intéressent.
+Lorsqu'il se connectera par la suite cette étape n'aura plus lieu, cependant il peut à tout moment changer ses préférences en cliquant sur le bouton préférences sur la page principale.
 
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Filtres.png" alt="alt text" width="350" height="350">
 
@@ -44,7 +45,9 @@ Une fois connecté, l'utilisateur est redirigé vers la page principale où tous
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipale%20.png" alt="alt text" width="350" height="350">
 
 
-Chaque Flash est illustré d'une image et affiche lorsqu'on clique sur le petit plus les informations importantes (lieu, heure, activité, nombre de participants désirés, information supplémentaires). L'utilisateur intéressé par le Flash peut cliquer sur le bouton je participe et peut donc participer à l'événement. Lorsque l'utilisateur a cliqué sur je participe le Flash change de couleur et devient vert, si le Flash est complet il devient rouge. L'utilisateur peut annuler sa participation au Flash dans ce cas il clique sur le bouton Annuler.
+Chaque Flash est illustré d'une image et affiche lorsqu'on clique sur le petit plus les informations importantes (lieu, heure, activité, nombre de participants désirés, information supplémentaires). 
+L'utilisateur intéressé par le Flash peut cliquer sur le bouton je participe et peut donc participer à l'événement.
+Lorsque l'utilisateur a cliqué sur je participe le Flash change de couleur et devient vert, si le Flash est complet il devient rouge. L'utilisateur peut annuler sa participation au Flash dans ce cas il clique sur le bouton Annuler.
 
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PrecisionsFlash.png" alt="alt text" width="350" height="350">
 
@@ -54,7 +57,8 @@ Sur cette même page principale, l'utilisateur trouvera un bouton (tu veux Flash
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipaleBouton.png" alt="alt text" width="350" height="350">
 
 
-L'utilisateur qui veut créer un Flash, rempli les informations relatives à l'événement qu'il veut partager (type d'activité, titre de l'activité, date, heure, lieu, informations supplémentaires s'il y en a). L'utilisateur ne peut pas créer de Flash plus de 48h avant que celui-ci ait lieu.
+L'utilisateur qui veut créer un Flash, rempli les informations relatives à l'événement qu'il veut partager (type d'activité, titre de l'activité, date, heure, lieu, informations supplémentaires s'il y en a).
+L'utilisateur ne peut pas créer de Flash plus de 48h avant que celui-ci ait lieu.
 
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Formulaire%20.png" alt="alt text" width="350" height="350">
 
