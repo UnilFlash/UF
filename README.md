@@ -1,7 +1,7 @@
 # UniFlash !
 Il s'agit d'une application meteor développée par des étudiants de l'université de Lausanne dans le cadre du cours Programmation pour Internet II - Meteor.js donné par Isaac Pante et accompagné par Loris Rimaz, tuteur.
 
-Tu as un cours annulé et tu ne sais pas quoi faire!? Alors rends-toi sur Uniflash et trouve un flash qui te correspond! L'application consiste à créer des Flashs/événements, essentiellement au sein d'une communauté universitaire, afin de faire rencontrer des gens et développer en eux une certaine spontanéité. 
+Tu as un cours annulé et tu ne sais pas quoi faire!? Alors rends-toi sur Uniflash et trouve un Flash qui te correspond! L'application consiste à créer des Flashs/événements, essentiellement au sein d'une communauté universitaire, afin de faire rencontrer des gens et développer en eux une certaine spontanéité. 
 Tout d'abord nous avons une page de login avec un signup et un login par mot de passe. Une fois enregistré l'utilisateur présélectionne des filtres pour avoir les types de Flashs qui l'intéresseraient. Après sa sélection, il se retrouve sur la page principale où l'on retrouve les Flashs des autres utilisateurs et un bouton jaune avec un éclair en bas de la page pour créer son propre Flash. Ce bouton l'amène sur une page de formulaire où il doit entrer diverses informations concernant son Flash ainsi qu'un upload de
 photo.
 
@@ -39,30 +39,29 @@ Voilà vous êtes sur notre application !
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Filtres.png" alt="alt text" width="350" height="350">
 
 
-*Une fois connecté, l'utilisateur est redirigé vers la page principale où tous les flashs disponibles s'affichent. De plus, il *peut changer ses préférences (types d'activités) et se déconnecter.
+*Une fois connecté, l'utilisateur est redirigé vers la page principale où tous les Flashs disponibles s'affichent. De plus, il *peut changer ses préférences (types d'activités) et se déconnecter.
 
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipale%20.png" alt="alt text" width="350" height="350">
 
 
-*Chaque flash est illustré d'une image et affiche lorsqu'on clique sur le petit plus les informations importantes (lieu, heure, *activité, nombre de participants désirés, information supplémentaires). L'utilisateur intéressé par le flash peut cliquer sur *le bouton je participe et peut donc participer à l'événement.Lorsque l'utilisateur a cliqué sur je participe le flash change *de couleur et devient vert, si le flash est complet il devient rouge. L'utilisateur peut annuler sa participation au flash dans *ce cas il clique sur le bouton Annule.
+*Chaque Flash est illustré d'une image et affiche lorsqu'on clique sur le petit plus les informations importantes (lieu, heure, *activité, nombre de participants désirés, information supplémentaires). L'utilisateur intéressé par le Flash peut cliquer sur *le bouton je participe et peut donc participer à l'événement. Lorsque l'utilisateur a cliqué sur je participe le Flash change *de couleur et devient vert, si le Flash est complet il devient rouge. L'utilisateur peut annuler sa participation au Flash dans *ce cas il clique sur le bouton Annuler.
 
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PrecisionsFlash.png" alt="alt text" width="350" height="350">
 
 
-*Sur cette même page principale l'utilisateur trouvera un bouton(tu veux flasher?!) qui lui permet de créer un flash *(redirection vers formulaire)
+*Sur cette même page principale, l'utilisateur trouvera un bouton (tu veux Flasher?!) qui lui permet de créer un Flash *(redirection vers formulaire)
 
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipaleBouton.png" alt="alt text" width="350" height="350">
 
 
-*L'utilisateur qui veut créer un flash, rempli les informations relatives à l'événement qu'il veut partager (type d'activité, *titre de l'activité, date, heure, lieu, informations supplémentaires s'il y en a). L'utilisateur ne peut pas créer de flash *plus de 48h avant que celui-ci ait lieu.
+*L'utilisateur qui veut créer un Flash, rempli les informations relatives à l'événement qu'il veut partager (type d'activité, *titre de l'activité, date, heure, lieu, informations supplémentaires s'il y en a). L'utilisateur ne peut pas créer de Flash *plus de 48h avant que celui-ci ait lieu.
 
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Formulaire%20.png" alt="alt text" width="350" height="350">
 
 
-*Après avoir rempli le formulaire l'utilisateur peut insérer un image pour illustrer son flash
+*Après avoir rempli le formulaire l'utilisateur peut insérer un image pour illustrer son Flash
 
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/UploadPhoto%20.png " alt="alt text" width="350" height="350">
-
 
 
 ## Bases de données 
