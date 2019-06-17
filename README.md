@@ -29,7 +29,7 @@ Voilà vous êtes sur notre application !
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Login.png" alt="alt text" width="350" height="350">
 
 
-*l'utilisateur créer un compte avec un nom, un email et un mot de passe
+*L'utilisateur créer un compte avec un nom, un email et un mot de passe
 
 <img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/CreerUnCompte%20.png" alt="alt text" width="350" height="350">
 
