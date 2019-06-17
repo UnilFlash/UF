@@ -83,8 +83,8 @@ Bootstrap (style)
 * Flash : Événement
 
 ## Contributeurs
-* Lara
 * Marielle
+* Lara
 * Jason
 * Lucas
 
