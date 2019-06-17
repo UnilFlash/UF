@@ -26,42 +26,42 @@ Voilà vous êtes sur notre application !
 
 *L'utilisateur qui a déjà un compte peut se connecter avec son email et son mot de passe, ceux qui n'ont pas encore de compte son *invités à s'enregitrer
 
-<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Login.png" alt="alt text" width="500" height="250">
+<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Login.png" alt="alt text" width="350" height="350">
 
 
 *l'utilisateur créer un compte avec un nom, un email et un mot de passe
 
-<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/CreerUnCompte%20.png" alt="alt text" width="500" height="250">
+<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/CreerUnCompte%20.png" alt="alt text" width="350" height="350">
 
 
 *Lors de la première connexion, l'utilisateur est invité à sélectionner le type d'activités qui l'intéressent. lorsqu'il se *connectera par la suite cette étape n'aura plus lieu, cependant il peut à tout moment changer ses préférences en cliquant sur *le bouton préférences sur la page principale.
 
-<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Filtres.png" alt="alt text" width="500" height="250">
+<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Filtres.png" alt="alt text" width="350" height="350">
 
 
 *Une fois connecté, l'utilisateur est redirigé vers la page principale où tous les flashs disponibles s'affichent. De plus, il *peut changer ses préférences (types d'activités) et se déconnecter.
 
-<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipale%20.png" alt="alt text" width="500" height="250">
+<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipale%20.png" alt="alt text" width="350" height="350">
 
 
 *Chaque flash est illustré d'une image et affiche lorsqu'on clique sur le petit plus les informations importantes (lieu, heure, *activité, nombre de participants désirés, information supplémentaires). L'utilisateur intéressé par le flash peut cliquer sur *le bouton je participe et peut donc participer à l'événement.Lorsque l'utilisateur a cliqué sur je participe le flash change *de couleur et devient vert, si le flash est complet il devient rouge. L'utilisateur peut annuler sa participation au flash dans *ce cas il clique sur le bouton Annule.
 
-<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PrecisionsFlash.png" alt="alt text" width="500" height="250">
+<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PrecisionsFlash.png" alt="alt text" width="350" height="350">
 
 
 *Sur cette même page principale l'utilisateur trouvera un bouton(tu veux flasher?!) qui lui permet de créer un flash *(redirection vers formulaire)
 
-<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipaleBouton.png" alt="alt text" width="500" height="250">
+<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/PagePrincipaleBouton.png" alt="alt text" width="350" height="350">
 
 
 *L'utilisateur qui veut créer un flash, rempli les informations relatives à l'événement qu'il veut partager (type d'activité, *titre de l'activité, date, heure, lieu, informations supplémentaires s'il y en a). L'utilisateur ne peut pas créer de flash *plus de 48h avant que celui-ci ait lieu.
 
-<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Formulaire%20.png" alt="alt text" width="500" height="250">
+<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Formulaire%20.png" alt="alt text" width="350" height="350">
 
 
 *Après avoir rempli le formulaire l'utilisateur peut insérer un image pour illustrer son flash
 
-<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/UploadPhoto%20.png " alt="alt text" width="500" height="250">
+<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/UploadPhoto%20.png " alt="alt text" width="350" height="350">
 
 
 
