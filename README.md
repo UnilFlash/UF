@@ -26,6 +26,7 @@ Voilà vous êtes sur notre application !
 
 *L'utilisateur qui a déjà un compte peut se connecter avec son email et son mot de passe, ceux qui n'ont pas encore de compte son *invités à s'enregitrer
 
+<img src="https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Login.png" alt="alt text" width="250" height="250">
 ![Alt text](https://github.com/UnilFlash/UF/blob/master/ImagesInterfaces/Login.png "connexion")
 
 *l'utilisateur créer un compte avec un nom, un email et un mot de passe
