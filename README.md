@@ -87,9 +87,9 @@ Bootstrap (style)
 * Flash : Événement
 
 ## Contributeurs
-* Marielle
-* Lara
-* Jason
-* Lucas
+* Marielle Grass 
+* Lara Lambelet 
+* Jason Ola 
+* Lucas Taddei 
 
 Faculté des Lettres - Université de Lausanne - Février à Mai 2019 Github
